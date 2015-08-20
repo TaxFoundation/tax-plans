@@ -1,0 +1,39 @@
+$background-color: #fff;
+$text-color: rgba(0, 0, 0, .8);
+
+body {
+  background: $background-color;
+  color: $text-color;
+  font-family: 'Helvetica';
+  margin: 0;
+  padding: 50px 20px 0;
+}
+
+.candidate-list {
+  list-style: none;
+
+  li {
+    display: inline;
+    margin: 0 10px;
+
+    &:first-of-type {
+      margin: 0 10px 0 0;
+    }
+
+    &:last-of-type {
+      margin: 0 0 0 10px;
+    }
+  }
+}
+
+.candidate-position {
+  display: table-row;
+
+  h3 {
+    display: table-cell;
+  }
+
+  .candidate-position-text {
+    display: table-cell;
+  }
+}
