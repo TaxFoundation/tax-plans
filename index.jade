@@ -25,23 +25,23 @@ ul(class='candidate-list')
 h2 Issues
 ul(class='issues-list')
   li
-    ul
-      li Rates on Ordinary Income
-      li Changes to Itemized Deductions
-      li Changes to Credits
-      li Changes to Alternative Minimum Tax
-      li Rates on Capital Gains and Dividends
+    ul(class='individual-taxes')
+      li(id='income-tax-rates' onclick='toggleIssues("income-tax-rates")' class='active') Rates on Ordinary Income
+      li(id='income-itemized-deductions' onclick='toggleIssues("income-itemized-deductions")') Changes to Itemized Deductions
+      li(id='income-changes-credits' onclick='toggleIssues("income-changes-credits")') Changes to Credits
+      li(id='income-changes-amt' onclick='toggleIssues("income-changes-amt")') Changes to Alternative Minimum Tax
+      li(id='income-cap-gains-dividends' onclick='toggleIssues("income-cap-gains-dividends")') Rates on Capital Gains and Dividends
   li
-    ul
-      li Top Rates
-      li Capital Expenses
-      li International Income
-      li Non-corporate Business Income
+    ul(class='corporate-taxes')
+      li(id='corporate-tax-rate' onclick='toggleIssues("corporate-tax-rate")' class='active') Top Rates
+      li(id='corporate-expensing' onclick='toggleIssues("corporate-expensing")') Capital Expenses
+      li(id='corporate-international' onclick='toggleIssues("corporate-international")') International Income
+      li(id='corporate-non-corporate' onclick='toggleIssues("corporate-non-corporate")') Non-corporate Business Income
   li
-    ul
-      li Payroll Taxes
-      li Estate Taxes
-      li Other
+    ul(class='other-taxes')
+      li(id='payroll-tax' onclick='toggleIssues("payroll-tax")') Payroll Taxes
+      li(id='estate-tax' onclick='toggleIssues("estate-tax")' class='active') Estate Taxes
+      li(id='other-tax' onclick='toggleIssues("other-tax")') Other
 
 table
   thead
@@ -49,7 +49,7 @@ table
       th Issue
       th Plan
   tbody
-    tr(id='income-tax-rates')
+    tr(class='income-tax-rates')
       td
         h2 Income Tax - Rates on Ordinary Income
       td
@@ -158,7 +158,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='income-itemized-deductions')
+    tr(class='income-itemized-deductions row-inactive')
       td
         h2 Income Tax - Changes to Itemized Deductions
       td
@@ -267,7 +267,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='income-changes-credits')
+    tr(class='income-changes-credits row-inactive')
       td
         h2 Income Tax - Changes to Credits
       td
@@ -376,7 +376,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='income-changes-amt')
+    tr(class='income-changes-amt row-inactive')
       td
         h2 Income Tax - Changes to Alternative Minimum Tax
       td
@@ -485,7 +485,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='income-cap-gains-dividends')
+    tr(class='income-cap-gains-dividends row-inactive')
       td
         h2 Income Tax - Rates on Capital Gains and Dividends
       td
@@ -594,7 +594,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='corporate-tax-rate')
+    tr(class='corporate-tax-rate')
       td
         h2 Corporate Income Tax - Top Rates
       td
@@ -703,7 +703,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='corporate-expensing')
+    tr(class='corporate-expensing row-inactive')
       td
         h2 Corporate Income Tax - Capital Expenses
       td
@@ -812,7 +812,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='corporate-international')
+    tr(class='corporate-international row-inactive')
       td
         h2 Corporate Income Tax - International Income
       td
@@ -921,7 +921,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='corporate-non-corporate')
+    tr(class='corporate-non-corporate row-inactive')
       td
         h2 Corporate Income Tax - Non-corporate Business Income
       td
@@ -1030,7 +1030,7 @@ table
             h3 Jim Webb
             div(class='candidate-position-text')
               p No specific proposal.
-    tr(id='payroll-tax')
+    tr(class='payroll-tax row-inactive')
       td
         h2 Payroll Taxes
       td
@@ -1139,116 +1139,116 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='estate-tax')
+    tr(class='estate-tax')
       td
         h2 Estate Tax
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3Jeb Bush
+            h3 Jeb Bush
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3Ben Carson
+            h3 Ben Carson
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lincoln-chafee-position inactive')
           div(class='candidate-name')
-            h3Lincoln Chafee
+            h3 Lincoln Chafee
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3Chris Christie
+            h3 Chris Christie
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position hillary-clinton-position')
           div(class='candidate-name')
-            h3Hillary Clinton
+            h3 Hillary Clinton
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3Ted Cruz
+            h3 Ted Cruz
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3Carly Fiorina
+            h3 Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lindsey-graham-position inactive')
           div(class='candidate-name')
-            h3Lindsey Graham
+            h3 Lindsey Graham
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position mike-huckabee-position inactive')
           div(class='candidate-name')
-            h3Mike Huckabee
+            h3 Mike Huckabee
           div(class='candidate-position-text')
             p Eliminates the estate tax. Creates a federal sales tax at a rate of 23%, with monthly rebates for low-income households. This proposal is often referred to as the FairTax, and is equivalent to a rate of 30% on the pre-tax price of goods and services.
         div(class='candidate-position bobby-jindal-position inactive')
           div(class='candidate-name')
-            h3Bobby Jindal
+            h3 Bobby Jindal
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3John Kasich
+            h3 John Kasich
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
           div(class='candidate-name')
-            h3Martin O'Malley
+            h3 Martin O'Malley
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position george-pataki-position inactive')
           div(class='candidate-name')
-            h3George Pataki
+            h3 George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position rand-paul-position')
           div(class='candidate-name')
-            h3Rand Paul
+            h3 Rand Paul
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3Rick Perry
+            h3 Rick Perry
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3Marco Rubio
+            h3 Marco Rubio
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3Bernie Sanders
+            h3 Bernie Sanders
           div(class='candidate-position-text')
             p Increases the top estate tax rate to 65%, and lowers the estate tax exclusion to $3.5 million.
         div(class='candidate-position rick-santorum-position inactive')
           div(class='candidate-name')
-            h3Rick Santorum
+            h3 Rick Santorum
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position donald-trump-position inactive')
           div(class='candidate-name')
-            h3Donald Trump
+            h3 Donald Trump
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3Scott Walker
+            h3 Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
           div(class='candidate-name')
-            h3Jim Webb
+            h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(id='other-tax')
+    tr(class='other-tax row-inactive')
       td
         h2 Other
       td

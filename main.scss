@@ -19,6 +19,17 @@ p {
   margin: 0 0 10px;
 }
 
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
 .candidate-list {
   list-style: none;
 
@@ -49,8 +60,27 @@ p {
 
 .issues-list {
   list-style: none;
+
   li {
     display: block;
+
+    .individual-taxes::before {
+      content: 'Individual Taxes: ';
+      display: block;
+      margin: 0 15px 0 0;
+    }
+
+    .corporate-taxes::before {
+      content: 'Corporate Taxes: ';
+      display: block;
+      margin: 0 15px 0 0;
+    }
+
+    .other-taxes::before {
+      content: 'Other Taxes: ';
+      display: block;
+      margin: 0 15px 0 0;
+    }
 
     li {
       border-radius: 5px;
@@ -94,6 +124,10 @@ p {
   opacity: 0;
   overflow: hidden;
   padding: 0;
+}
+
+.row-inactive {
+  display: none;
 }
 
 table {

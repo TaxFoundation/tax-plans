@@ -18,3 +18,15 @@ html
           positions.removeClass('inactive');
         }
       };
+      
+      function toggleIssues(name) {
+        var issue = $('#' + name);
+        var issueRow = $('.' + name);
+        if (issue.hasClass('active')) {
+          issue.removeClass('active');
+          issueRow.addClass('row-inactive');
+        } else {
+          issue.addClass('active');
+          issueRow.removeClass('row-inactive');
+        }
+      };
