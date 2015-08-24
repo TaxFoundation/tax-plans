@@ -36,6 +36,14 @@ p {
   }
 }
 
+.candidate-name {
+  margin: 0 0 15px;
+}
+
+.candidate-position {
+  margin: 0 0 30px;
+}
+
 .hide {
   display: none;
 }
@@ -58,6 +66,13 @@ th {
   border-left: 1px solid $table-border;
   border-top: 1px solid $table-border;
   padding: 10px 15px;
+
+  h2,
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+  }
 }
 
 th {
@@ -83,4 +98,214 @@ tr:last-child td:first-child {
 
 tr:last-child td:last-child {
   border-radius: 0 0 4px;
+}
+
+.jeb-bush-position h3::before {
+  background-image: url('/images/Jeb_Bush.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.ben-carson-position h3::before {
+  background-image: url('/images/Ben_Carson.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.lincoln-chafee-position h3::before {
+  background-image: url('/images/Lincoln_Chafee.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.chris-christie-position h3::before {
+  background-image: url('/images/Chris_Christie.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.hillary-clinton-position h3::before {
+  background-image: url('/images/Hillary_Clinton.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.ted-cruz-position h3::before {
+  background-image: url('/images/Ted_Cruz.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.carly-fiorina-position h3::before {
+  background-image: url('/images/Carly_Fiorina.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.lindsey-graham-position h3::before {
+  background-image: url('/images/Lindsey_Graham.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.mike-huckabee-position h3::before {
+  background-image: url('/images/Mike_Huckabee.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.bobby-jindal-position h3::before {
+  background-image: url('/images/Bobby_Jindal.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.john-kasich-position h3::before {
+  background-image: url('/images/John_Kasich.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.martin-omalley-position h3::before {
+  background-image: url('/images/Martin_OMalley.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.george-pataki-position h3::before {
+  background-image: url('/images/George_Pataki.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.rand-paul-position h3::before {
+  background-image: url('/images/Rand_Paul.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.rick-perry-position h3::before {
+  background-image: url('/images/Rick_Perry.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.marco-rubio-position h3::before {
+  background-image: url('/images/Marco_Rubio.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.bernie-sanders-position h3::before {
+  background-image: url('/images/Bernie_Sanders.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.rick-santorum-position h3::before {
+  background-image: url('/images/Rick_Santorum.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.donald-trump-position h3::before {
+  background-image: url('/images/Donald_Trump.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.scott-walker-position h3::before {
+  background-image: url('/images/Scott_Walker.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
+}
+
+.jim-webb-position h3::before {
+  background-image: url('/images/Jim_Webb.png');
+  background-size: 100%;
+  content: '';
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px -15px 0;
+  width: 50px;
 }
