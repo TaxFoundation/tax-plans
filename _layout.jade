@@ -5,4 +5,16 @@ html
     link(rel='stylesheet' href='/main.css')
   body
     != yield
-    script(src='//code.jquery.com/jquery-1.11.3.min.js')
+    script(src='//code.jquery.com/jquery-1.11.3.min.js').
+    script(type='text/javascript').
+      function toggleCandidate(name) {
+        var candidate = $('#' + name);
+        var positions = $('.' + name + '-position');
+        if (candidate.hasClass('active')) {
+          candidate.removeClass('active');
+          positions.addClass('inactive');
+        } else {
+          candidate.addClass('active');
+          positions.removeClass('inactive');
+        }
+      };

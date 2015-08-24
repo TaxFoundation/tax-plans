@@ -1,9 +1,9 @@
 @import 'reset';
 
 $background-color: #fff;
+$tf-blue: #0094ff;
 $text-color: rgba(0, 0, 0, .8);
 $table-border: #ddd;
-$table-alt-row-bg: #f9f9f9;
 
 body {
   background: $background-color;
@@ -23,15 +23,47 @@ p {
   list-style: none;
 
   li {
-    display: inline;
-    margin: 0 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 15px;
+    padding: 10px;
 
-    &:first-of-type {
-      margin: 0 10px 0 0;
+    &::before {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      display: block;
+      height: 40px;
+      margin: 0 auto;
+      width: 40px;
     }
 
-    &:last-of-type {
-      margin: 0 0 0 10px;
+    &.active {
+      background-color: $tf-blue;
+      color: $background-color;
+    }
+  }
+}
+
+.issues-list {
+  list-style: none;
+  li {
+    display: block;
+
+    li {
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 15px;
+      padding: 10px;
+
+      &.active {
+        background-color: $tf-blue;
+        color: $background-color;
+      }
     }
   }
 }
@@ -41,11 +73,27 @@ p {
 }
 
 .candidate-position {
-  margin: 0 0 30px;
+  max-height: 500px;
+  opacity: 1;
+  padding: 0 0 25px;
+  transition: max-height .2s, opacity .2s, padding .1s;
+
+  h3::before {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px -15px 0;
+    width: 50px;
+  }
 }
 
-.hide {
-  display: none;
+.inactive {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 table {
@@ -55,10 +103,6 @@ table {
   border-radius: 4px;
   margin: 25px auto;
   width: 100%;
-
-  tbody > tr:nth-of-type(odd) {
-    background-color: $table-alt-row-bg;
-  }
 }
 
 td,
@@ -100,212 +144,107 @@ tr:last-child td:last-child {
   border-radius: 0 0 4px;
 }
 
+#jeb-bush::before,
 .jeb-bush-position h3::before {
   background-image: url('/images/Jeb_Bush.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#ben-carson::before,
 .ben-carson-position h3::before {
   background-image: url('/images/Ben_Carson.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#lincoln-chafee::before,
 .lincoln-chafee-position h3::before {
   background-image: url('/images/Lincoln_Chafee.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#chris-christie::before,
 .chris-christie-position h3::before {
   background-image: url('/images/Chris_Christie.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#hillary-clinton::before,
 .hillary-clinton-position h3::before {
   background-image: url('/images/Hillary_Clinton.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#ted-cruz::before,
 .ted-cruz-position h3::before {
   background-image: url('/images/Ted_Cruz.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#carly-fiorina::before,
 .carly-fiorina-position h3::before {
   background-image: url('/images/Carly_Fiorina.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#lindsey-graham::before,
 .lindsey-graham-position h3::before {
   background-image: url('/images/Lindsey_Graham.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#mike-huckabee::before,
 .mike-huckabee-position h3::before {
   background-image: url('/images/Mike_Huckabee.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#bobby-jindal::before,
 .bobby-jindal-position h3::before {
   background-image: url('/images/Bobby_Jindal.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#john-kasich::before,
 .john-kasich-position h3::before {
   background-image: url('/images/John_Kasich.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#martin-omalley::before,
 .martin-omalley-position h3::before {
   background-image: url('/images/Martin_OMalley.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#george-pataki::before,
 .george-pataki-position h3::before {
   background-image: url('/images/George_Pataki.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#rand-paul::before,
 .rand-paul-position h3::before {
   background-image: url('/images/Rand_Paul.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#rick-perry::before,
 .rick-perry-position h3::before {
   background-image: url('/images/Rick_Perry.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#marco-rubio::before,
 .marco-rubio-position h3::before {
   background-image: url('/images/Marco_Rubio.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#bernie-sanders::before,
 .bernie-sanders-position h3::before {
   background-image: url('/images/Bernie_Sanders.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#rick-santorum::before,
 .rick-santorum-position h3::before {
   background-image: url('/images/Rick_Santorum.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#donald-trump::before,
 .donald-trump-position h3::before {
   background-image: url('/images/Donald_Trump.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#scott-walker::before,
 .scott-walker-position h3::before {
   background-image: url('/images/Scott_Walker.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
 
+#jim-webb::before,
 .jim-webb-position h3::before {
   background-image: url('/images/Jim_Webb.png');
-  background-size: 100%;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px -15px 0;
-  width: 50px;
 }
