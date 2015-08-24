@@ -1,12 +1,22 @@
+@import 'reset';
+
 $background-color: #fff;
 $text-color: rgba(0, 0, 0, .8);
+$table-border: #ddd;
+$table-alt-row-bg: #f9f9f9;
 
 body {
   background: $background-color;
   color: $text-color;
-  font-family: 'Helvetica';
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   margin: 0;
   padding: 50px 20px 0;
+}
+
+p {
+  margin: 0 0 10px;
 }
 
 .candidate-list {
@@ -26,14 +36,51 @@ body {
   }
 }
 
-.candidate-position {
-  display: table-row;
+.hide {
+  display: none;
+}
 
-  h3 {
-    display: table-cell;
-  }
+table {
+  border: solid $table-border 1px;
+  border-collapse: separate;
+  border-left: 0;
+  border-radius: 4px;
+  margin: 25px auto;
+  width: 100%;
 
-  .candidate-position-text {
-    display: table-cell;
+  tbody > tr:nth-of-type(odd) {
+    background-color: $table-alt-row-bg;
   }
+}
+
+td,
+th {
+  border-left: 1px solid $table-border;
+  border-top: 1px solid $table-border;
+  padding: 10px 15px;
+}
+
+th {
+  border-top: 0;
+  font-weight: 700;
+}
+
+th:first-child {
+  border-radius: 4px 0 0;
+}
+
+th:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+th:only-child {
+  border-radius: 4px 4px 0 0;
+}
+
+tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+
+tr:last-child td:last-child {
+  border-radius: 0 0 4px;
 }
