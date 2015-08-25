@@ -1,6 +1,7 @@
 h1 2016 Presidential Candidates' Tax Plans
-h2 Candidates
-ul(class='candidate-list')
+h2(class='category-title') Candidates
+  strong(class='toggle candidate-toggle' onclick='showCandidates()') &xvee;
+ul(class='candidate-list inactive')
   li(onclick='toggleCandidate("jeb-bush")' id='jeb-bush') Jeb Bush
   li(onclick='toggleCandidate("ben-carson")' id='ben-carson') Ben Carson
   li(onclick='toggleCandidate("lincoln-chafee")' id='lincoln-chafee') Lincoln Chafee
@@ -23,8 +24,9 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("donald-trump")' id='donald-trump') Donald Trump
   li(onclick='toggleCandidate("scott-walker")' id='scott-walker') Scott Walker
   li(onclick='toggleCandidate("jim-webb")' id='jim-webb') Jim Webb
-h2 Issues
-ul(class='issues-list')
+h2(class='category-title') Issues
+  strong(class='toggle issue-toggle' onclick='showIssues()') &xvee;
+ul(class='issues-list inactive')
   li
     ul(class='individual-taxes')
       li(id='income-tax-rates' onclick='toggleIssues("income-tax-rates")' class='active') Rates on Ordinary Income

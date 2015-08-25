@@ -5,7 +5,7 @@ $tf-blue: #0094ff;
 $text-color: rgba(0, 0, 0, .8);
 $table-border: #ddd;
 
-body {
+.tax-plans-tool {
   background: $background-color;
   color: $text-color;
   font-family: 'Lato', sans-serif;
@@ -13,29 +13,92 @@ body {
   line-height: 22px;
   margin: 0;
   padding: 50px 20px 0;
-}
 
-p {
-  margin: 0 0 10px;
-}
+  p {
+    margin: 0 0 10px;
+  }
 
-h1 {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 32px;
-}
+  strong {
+    font-weight: 700;
+  }
 
-h2 {
-  font-size: 22px;
-  line-height: 26px;
-  margin: 10px 0 0;
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .category-title {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 10px 0 0;
+
+    .toggle {
+      color: $tf-blue;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 0 0 10px;
+      transition: transform .2s;
+    }
+  }
+
+  table {
+    border: solid $table-border 1px;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 4px;
+    margin: 25px auto;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border-left: 1px solid $table-border;
+    border-top: 1px solid $table-border;
+    padding: 10px 15px 0;
+
+    h2,
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  }
+
+  th {
+    border-top: 0;
+    font-weight: 700;
+  }
+
+  th:first-child {
+    border-radius: 4px 0 0;
+  }
+
+  th:last-child {
+    border-radius: 0 4px 0 0;
+  }
+
+  th:only-child {
+    border-radius: 4px 4px 0 0;
+  }
+
+  tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+  }
+
+  tr:last-child td:last-child {
+    border-radius: 0 0 4px;
+  }
 }
 
 .candidate-list {
   border: solid $table-border 1px;
   border-radius: 4px;
   list-style: none;
+  max-height: 1000px;
+  opacity: 1;
   padding: 5px;
+  transition: max-height .2s, opacity .2s, padding .2s;
 
   li {
     border-radius: 5px;
@@ -67,7 +130,10 @@ h2 {
   border: solid $table-border 1px;
   border-radius: 4px;
   list-style: none;
+  max-height: 1000px;
+  opacity: 1;
   padding: 5px;
+  transition: max-height .2s, opacity .2s, padding .2s;
 
   li {
     display: block;
@@ -138,7 +204,7 @@ h2 {
     h3 {
       text-align: center;
     }
-    
+
     h3::before {
       background-repeat: no-repeat;
       background-size: 100%;
@@ -163,52 +229,8 @@ h2 {
   display: none;
 }
 
-table {
-  border: solid $table-border 1px;
-  border-collapse: separate;
-  border-left: 0;
-  border-radius: 4px;
-  margin: 25px auto;
-  width: 100%;
-}
-
-td,
-th {
-  border-left: 1px solid $table-border;
-  border-top: 1px solid $table-border;
-  padding: 10px 15px 0;
-
-  h2,
-  h3 {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 28px;
-  }
-}
-
-th {
-  border-top: 0;
-  font-weight: 700;
-}
-
-th:first-child {
-  border-radius: 4px 0 0;
-}
-
-th:last-child {
-  border-radius: 0 4px 0 0;
-}
-
-th:only-child {
-  border-radius: 4px 4px 0 0;
-}
-
-tr:last-child td:first-child {
-  border-radius: 0 0 0 4px;
-}
-
-tr:last-child td:last-child {
-  border-radius: 0 0 4px;
+.rotate {
+  transform: rotate(180deg);
 }
 
 #jeb-bush::before,

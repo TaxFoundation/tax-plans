@@ -5,9 +5,30 @@ html
     link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' type='text/css')
     link(rel='stylesheet' href='main.css')
   body
-    != yield
+    div(class='tax-plans-tool')
+      != yield
     script(src='//code.jquery.com/jquery-1.11.3.min.js').
     script(type='text/javascript').
+      function showCandidates() {
+        if ($('.candidate-list').hasClass('inactive')) {
+          $('.candidate-list').removeClass('inactive');
+          $('.candidate-toggle').addClass('rotate');
+        } else {
+          $('.candidate-list').addClass('inactive');
+          $('.candidate-toggle').removeClass('rotate');
+        }
+      }
+      
+      function showIssues() {
+        if ($('.issues-list').hasClass('inactive')) {
+          $('.issues-list').removeClass('inactive');
+          $('.issue-toggle').addClass('rotate');
+        } else {
+          $('.issues-list').addClass('inactive');
+          $('.issue-toggle').removeClass('rotate');
+        }
+      }
+      
       function toggleCandidate(name) {
         var candidate = $('#' + name);
         var positions = $('.' + name + '-position');
