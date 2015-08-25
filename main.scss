@@ -28,10 +28,14 @@ h1 {
 h2 {
   font-size: 22px;
   line-height: 26px;
+  margin: 10px 0 0;
 }
 
 .candidate-list {
+  border: solid $table-border 1px;
+  border-radius: 4px;
   list-style: none;
+  padding: 5px;
 
   li {
     border-radius: 5px;
@@ -60,24 +64,30 @@ h2 {
 }
 
 .issues-list {
+  border: solid $table-border 1px;
+  border-radius: 4px;
   list-style: none;
+  padding: 5px;
 
   li {
     display: block;
 
     .individual-taxes::before {
+      border-bottom: solid 1px $table-border;
       content: 'Individual Taxes: ';
       display: block;
       margin: 0 15px 0 0;
     }
 
     .corporate-taxes::before {
+      border-bottom: solid 1px $table-border;
       content: 'Corporate Taxes: ';
       display: block;
       margin: 0 15px 0 0;
     }
 
     .other-taxes::before {
+      border-bottom: solid 1px $table-border;
       content: 'Other Taxes: ';
       display: block;
       margin: 0 15px 0 0;
