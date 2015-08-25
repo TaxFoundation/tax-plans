@@ -228,6 +228,11 @@ tr:last-child td:last-child {
   background-image: url('images/Carly_Fiorina.png');
 }
 
+#jim-gilmore::before,
+.jim-gilmore-position h3::before {
+  background-image: url('images/Jim_Gilmore.png');
+}
+
 #lindsey-graham::before,
 .lindsey-graham-position h3::before {
   background-image: url('images/Lindsey_Graham.png');
