@@ -30,7 +30,7 @@ ul(class='issues-list')
       li(id='income-itemized-deductions' onclick='toggleIssues("income-itemized-deductions")') Changes to Itemized Deductions
       li(id='income-changes-credits' onclick='toggleIssues("income-changes-credits")') Changes to Credits
       li(id='income-changes-amt' onclick='toggleIssues("income-changes-amt")') Changes to Alternative Minimum Tax
-      li(id='income-cap-gains-dividends' onclick='toggleIssues("income-cap-gains-dividends")') Rates on Capital Gains and Dividends
+      li(id='income-cap-gains-dividends' onclick='toggleIssues("income-cap-gains-dividends")' class='active') Rates on Capital Gains and Dividends
   li
     ul(class='corporate-taxes')
       li(id='corporate-tax-rate' onclick='toggleIssues("corporate-tax-rate")' class='active') Top Rates
@@ -485,7 +485,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='income-cap-gains-dividends row-inactive')
+    tr(class='income-cap-gains-dividends')
       td
         h2 Income Tax - Rates on Capital Gains and Dividends
       td

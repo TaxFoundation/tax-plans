@@ -35,11 +35,12 @@ h2 {
 
   li {
     border-radius: 5px;
+    cursor: pointer;
     display: inline-block;
     font-size: 12px;
     font-weight: 700;
-    margin: 15px;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
 
     &::before {
       background-repeat: no-repeat;
@@ -84,11 +85,12 @@ h2 {
 
     li {
       border-radius: 5px;
+      cursor: pointer;
       display: inline-block;
       font-size: 12px;
       font-weight: 700;
-      margin: 15px;
-      padding: 10px;
+      margin: 10px;
+      padding: 5px;
 
       &.active {
         background-color: $tf-blue;
@@ -103,9 +105,11 @@ h2 {
 }
 
 .candidate-position {
+  border-bottom: solid 1px $table-border;
+  margin: 1px 0 -1px;
   max-height: 500px;
   opacity: 1;
-  padding: 0 0 25px;
+  padding: 7px 0 0;
   transition: max-height .2s, opacity .2s, padding .1s;
 
   h3::before {
@@ -113,13 +117,14 @@ h2 {
     background-size: 100%;
     content: '';
     display: inline-block;
-    height: 50px;
-    margin: 0 10px -15px 0;
-    width: 50px;
+    height: 40px;
+    margin: 0 10px -12px 0;
+    width: 40px;
   }
 }
 
 .inactive {
+  border: 0;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -143,7 +148,7 @@ td,
 th {
   border-left: 1px solid $table-border;
   border-top: 1px solid $table-border;
-  padding: 10px 15px;
+  padding: 10px 15px 0;
 
   h2,
   h3 {
@@ -180,105 +185,105 @@ tr:last-child td:last-child {
 
 #jeb-bush::before,
 .jeb-bush-position h3::before {
-  background-image: url('/images/Jeb_Bush.png');
+  background-image: url('images/Jeb_Bush.png');
 }
 
 #ben-carson::before,
 .ben-carson-position h3::before {
-  background-image: url('/images/Ben_Carson.png');
+  background-image: url('images/Ben_Carson.png');
 }
 
 #lincoln-chafee::before,
 .lincoln-chafee-position h3::before {
-  background-image: url('/images/Lincoln_Chafee.png');
+  background-image: url('images/Lincoln_Chafee.png');
 }
 
 #chris-christie::before,
 .chris-christie-position h3::before {
-  background-image: url('/images/Chris_Christie.png');
+  background-image: url('images/Chris_Christie.png');
 }
 
 #hillary-clinton::before,
 .hillary-clinton-position h3::before {
-  background-image: url('/images/Hillary_Clinton.png');
+  background-image: url('images/Hillary_Clinton.png');
 }
 
 #ted-cruz::before,
 .ted-cruz-position h3::before {
-  background-image: url('/images/Ted_Cruz.png');
+  background-image: url('images/Ted_Cruz.png');
 }
 
 #carly-fiorina::before,
 .carly-fiorina-position h3::before {
-  background-image: url('/images/Carly_Fiorina.png');
+  background-image: url('images/Carly_Fiorina.png');
 }
 
 #lindsey-graham::before,
 .lindsey-graham-position h3::before {
-  background-image: url('/images/Lindsey_Graham.png');
+  background-image: url('images/Lindsey_Graham.png');
 }
 
 #mike-huckabee::before,
 .mike-huckabee-position h3::before {
-  background-image: url('/images/Mike_Huckabee.png');
+  background-image: url('images/Mike_Huckabee.png');
 }
 
 #bobby-jindal::before,
 .bobby-jindal-position h3::before {
-  background-image: url('/images/Bobby_Jindal.png');
+  background-image: url('images/Bobby_Jindal.png');
 }
 
 #john-kasich::before,
 .john-kasich-position h3::before {
-  background-image: url('/images/John_Kasich.png');
+  background-image: url('images/John_Kasich.png');
 }
 
 #martin-omalley::before,
 .martin-omalley-position h3::before {
-  background-image: url('/images/Martin_OMalley.png');
+  background-image: url('images/Martin_OMalley.png');
 }
 
 #george-pataki::before,
 .george-pataki-position h3::before {
-  background-image: url('/images/George_Pataki.png');
+  background-image: url('images/George_Pataki.png');
 }
 
 #rand-paul::before,
 .rand-paul-position h3::before {
-  background-image: url('/images/Rand_Paul.png');
+  background-image: url('images/Rand_Paul.png');
 }
 
 #rick-perry::before,
 .rick-perry-position h3::before {
-  background-image: url('/images/Rick_Perry.png');
+  background-image: url('images/Rick_Perry.png');
 }
 
 #marco-rubio::before,
 .marco-rubio-position h3::before {
-  background-image: url('/images/Marco_Rubio.png');
+  background-image: url('images/Marco_Rubio.png');
 }
 
 #bernie-sanders::before,
 .bernie-sanders-position h3::before {
-  background-image: url('/images/Bernie_Sanders.png');
+  background-image: url('images/Bernie_Sanders.png');
 }
 
 #rick-santorum::before,
 .rick-santorum-position h3::before {
-  background-image: url('/images/Rick_Santorum.png');
+  background-image: url('images/Rick_Santorum.png');
 }
 
 #donald-trump::before,
 .donald-trump-position h3::before {
-  background-image: url('/images/Donald_Trump.png');
+  background-image: url('images/Donald_Trump.png');
 }
 
 #scott-walker::before,
 .scott-walker-position h3::before {
-  background-image: url('/images/Scott_Walker.png');
+  background-image: url('images/Scott_Walker.png');
 }
 
 #jim-webb::before,
 .jim-webb-position h3::before {
-  background-image: url('/images/Jim_Webb.png');
+  background-image: url('images/Jim_Webb.png');
 }
