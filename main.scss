@@ -122,14 +122,32 @@ h2 {
   padding: 7px 0 0;
   transition: max-height .2s, opacity .2s, padding .1s;
 
-  h3::before {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    content: '';
-    display: inline-block;
-    height: 40px;
-    margin: 0 10px -12px 0;
-    width: 40px;
+  @media (min-width: 500px) {
+    h3::before {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      display: inline-block;
+      height: 40px;
+      margin: 0 10px -12px 0;
+      width: 40px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    h3 {
+      text-align: center;
+    }
+    
+    h3::before {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      display: block;
+      height: 40px;
+      margin: 0 auto;
+      width: 40px;
+    }
   }
 }
 
