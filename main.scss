@@ -26,6 +26,7 @@ $table-border: #ddd;
     font-size: 28px;
     font-weight: 700;
     line-height: 32px;
+    margin: 0 0 10px;
   }
 
   .category-title {
@@ -89,6 +90,10 @@ $table-border: #ddd;
   tr:last-child td:last-child {
     border-radius: 0 0 4px;
   }
+}
+
+.table-notes {
+  background-color: $table-border;
 }
 
 .candidate-list {
