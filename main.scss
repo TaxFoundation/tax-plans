@@ -39,8 +39,8 @@ h2 {
     display: inline-block;
     font-size: 12px;
     font-weight: 700;
-    margin: 10px;
-    padding: 5px;
+    margin: 5px;
+    padding: 5px 5px 3px;
 
     &::before {
       background-repeat: no-repeat;
@@ -89,8 +89,8 @@ h2 {
       display: inline-block;
       font-size: 12px;
       font-weight: 700;
-      margin: 10px;
-      padding: 5px;
+      margin: 5px;
+      padding: 3px;
 
       &.active {
         background-color: $tf-blue;
