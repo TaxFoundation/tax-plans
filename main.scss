@@ -67,7 +67,6 @@ $table-border: #ddd;
     background-color: $background-color !important;
     border-left: 1px solid $table-border !important;
     color: $text-color !important;
-    padding: 10px 15px 0;
     vertical-align: top;
 
     h2,
@@ -85,10 +84,12 @@ $table-border: #ddd;
   th {
     border-top: 0;
     font-weight: 700;
+    padding: 10px 15px 0;
   }
 
   td {
     border-top: 1px solid $table-border !important;
+    padding: 0 15px;
   }
 
   th:first-child {
@@ -212,8 +213,8 @@ $table-border: #ddd;
 }
 
 .candidate-position {
-  border-bottom: solid 1px $table-border;
-  margin: 1px 0 -1px;
+  border-top: solid 1px $table-border;
+  margin: -1px 0 1px;
   max-height: 500px;
   opacity: 1;
   padding: 7px 0 0;
