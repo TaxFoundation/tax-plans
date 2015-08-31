@@ -1,8 +1,10 @@
 h1 2016 Presidential Candidates' Tax Plans
 p Tax policy is shaping up to be one of the major issues of the 2016 presidential campaign. Below, we’ve compiled every tax proposal that this season’s presidential candidates have offered during the campaign. This chart will be updated as candidates issue more detailed tax plans in the coming months.
 p To read more about the different issues listed in this chart, click [here].
+p To select from different candidates and issues, click the blue arrow buttons below to expand the selection menus.
 h2(class='category-title') Candidates
   strong(class='toggle candidate-toggle' onclick='showCandidates()') &xvee;
+  span(class='expansion-note candidates-note') Click to expand.
 ul(class='candidate-list inactive')
   li(onclick='toggleCandidate("jeb-bush")' id='jeb-bush') Jeb Bush
   li(onclick='toggleCandidate("ben-carson")' id='ben-carson') Ben Carson
@@ -26,27 +28,30 @@ ul(class='candidate-list inactive')
   li(onclick='toggleCandidate("donald-trump")' id='donald-trump') Donald Trump
   li(onclick='toggleCandidate("scott-walker")' id='scott-walker') Scott Walker
   li(onclick='toggleCandidate("jim-webb")' id='jim-webb') Jim Webb
+  li(onclick='selectAllCandidates()' id='select-all-candidates') Select All
 h2(class='category-title') Issues
   strong(class='toggle issue-toggle' onclick='showIssues()') &xvee;
+  span(class='expansion-note issues-note') Click to expand.
 ul(class='issues-list inactive')
   li
-    ul(class='individual-taxes')
-      li(id='income-tax-rates' onclick='toggleIssues("income-tax-rates")' class='active') Rates on Ordinary Income
-      li(id='income-itemized-deductions' onclick='toggleIssues("income-itemized-deductions")') Changes to Itemized Deductions
-      li(id='income-changes-credits' onclick='toggleIssues("income-changes-credits")') Changes to Credits
-      li(id='income-changes-amt' onclick='toggleIssues("income-changes-amt")') Changes to Alternative Minimum Tax
-      li(id='income-cap-gains-dividends' onclick='toggleIssues("income-cap-gains-dividends")' class='active') Rates on Capital Gains and Dividends
+    ul(class='issue-category individual-taxes')
+      li(class='issue-item' id='income-tax-rates' onclick='toggleIssues("income-tax-rates")' class='active') Rates on Ordinary Income
+      li(class='issue-item' id='income-itemized-deductions' onclick='toggleIssues("income-itemized-deductions")') Changes to Itemized Deductions
+      li(class='issue-item' id='income-changes-credits' onclick='toggleIssues("income-changes-credits")') Changes to Credits
+      li(class='issue-item' id='income-changes-amt' onclick='toggleIssues("income-changes-amt")') Changes to Alternative Minimum Tax
+      li(class='issue-item' id='income-cap-gains-dividends' onclick='toggleIssues("income-cap-gains-dividends")' class='active') Rates on Capital Gains and Dividends
   li
-    ul(class='corporate-taxes')
-      li(id='corporate-tax-rate' onclick='toggleIssues("corporate-tax-rate")' class='active') Top Rates
-      li(id='corporate-expensing' onclick='toggleIssues("corporate-expensing")') Capital Expenses
-      li(id='corporate-international' onclick='toggleIssues("corporate-international")') International Income
-      li(id='corporate-non-corporate' onclick='toggleIssues("corporate-non-corporate")') Non-corporate Business Income
+    ul(class='issue-category corporate-taxes')
+      li(class='issue-item' id='corporate-tax-rate' onclick='toggleIssues("corporate-tax-rate")' class='active') Top Rates
+      li(class='issue-item' id='corporate-expensing' onclick='toggleIssues("corporate-expensing")') Capital Expenses
+      li(class='issue-item' id='corporate-international' onclick='toggleIssues("corporate-international")') International Income
+      li(class='issue-item' id='corporate-non-corporate' onclick='toggleIssues("corporate-non-corporate")') Non-corporate Business Income
   li
-    ul(class='other-taxes')
-      li(id='payroll-tax' onclick='toggleIssues("payroll-tax")') Payroll Taxes
-      li(id='estate-tax' onclick='toggleIssues("estate-tax")' class='active') Estate Taxes
-      li(id='other-tax' onclick='toggleIssues("other-tax")') Other
+    ul(class='issue-category other-taxes')
+      li(class='issue-item' id='payroll-tax' onclick='toggleIssues("payroll-tax")') Payroll Taxes
+      li(class='issue-item' id='estate-tax' onclick='toggleIssues("estate-tax")' class='active') Estate Taxes
+      li(class='issue-item' id='other-tax' onclick='toggleIssues("other-tax")') Other
+  li(class='issue-item issue-select-all' onclick='selectAllIssues()') Select All
 
 table
   thead
@@ -54,7 +59,7 @@ table
       th Issue
       th Plan
   tbody
-    tr(class='income-tax-rates')
+    tr(class='issue-row income-tax-rates')
       td
         h2 Income Tax - Rates on Ordinary Income
       td
@@ -168,7 +173,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='income-itemized-deductions row-inactive')
+    tr(class='issue-row income-itemized-deductions row-inactive')
       td
         h2 Income Tax - Changes to Itemized Deductions
       td
@@ -282,7 +287,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='income-changes-credits row-inactive')
+    tr(class='issue-row income-changes-credits row-inactive')
       td
         h2 Income Tax - Changes to Credits
       td
@@ -396,7 +401,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='income-changes-amt row-inactive')
+    tr(class='issue-row income-changes-amt row-inactive')
       td
         h2 Income Tax - Changes to Alternative Minimum Tax
       td
@@ -510,7 +515,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='income-cap-gains-dividends')
+    tr(class='issue-row income-cap-gains-dividends')
       td
         h2 Income Tax - Rates on Capital Gains and Dividends
       td
@@ -624,7 +629,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='corporate-tax-rate')
+    tr(class='issue-row corporate-tax-rate')
       td
         h2 Corporate Income Tax - Top Rates
       td
@@ -738,7 +743,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='corporate-expensing row-inactive')
+    tr(class='issue-row corporate-expensing row-inactive')
       td
         h2 Corporate Income Tax - Capital Expenses
       td
@@ -852,7 +857,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='corporate-international row-inactive')
+    tr(class='issue-row corporate-international row-inactive')
       td
         h2 Corporate Income Tax - International Income
       td
@@ -966,7 +971,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='corporate-non-corporate row-inactive')
+    tr(class='issue-row corporate-non-corporate row-inactive')
       td
         h2 Corporate Income Tax - Non-corporate Business Income
       td
@@ -1080,7 +1085,7 @@ table
             h3 Jim Webb
             div(class='candidate-position-text')
               p No specific proposal.
-    tr(class='payroll-tax row-inactive')
+    tr(class='issue-row payroll-tax row-inactive')
       td
         h2 Payroll Taxes
       td
@@ -1194,7 +1199,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='estate-tax')
+    tr(class='issue-row estate-tax')
       td
         h2 Estate Tax
       td
@@ -1308,7 +1313,7 @@ table
             h3 Jim Webb
           div(class='candidate-position-text')
             p No specific proposal.
-    tr(class='other-tax row-inactive')
+    tr(class='issue-row other-tax row-inactive')
       td
         h2 Other
       td
@@ -1337,6 +1342,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Establishes business tax credits for profit-sharing and apprenticeships.
+            p Taxes carried interest at ordinary income rates.
         div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
             h3 Ted Cruz
@@ -1377,6 +1383,7 @@ table
             h3 Martin O'Malley
           div(class='candidate-position-text')
             p Establishes a financial transactions tax, at an unspecified rate.
+            p Taxes carried interest at ordinary income rates
         div(class='candidate-position george-pataki-position inactive')
           div(class='candidate-name')
             h3 George Pataki
@@ -1402,6 +1409,7 @@ table
             h3 Bernie Sanders
           div(class='candidate-position-text')
             p Establishes a financial transactions tax, at a rate between 0.005% and 0.5%, with an offsetting credit for low-income Americans. Establishes taxes on carbon and methane emissions.
+            p Taxes carried interest at ordinary income rates.
         div(class='candidate-position rick-santorum-position inactive')
           div(class='candidate-name')
             h3 Rick Santorum
@@ -1411,7 +1419,7 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Taxes carried interest at ordinary income rates.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
             h3 Scott Walker

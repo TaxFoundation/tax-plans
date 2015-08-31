@@ -10,7 +10,7 @@ $table-border: #ddd;
   color: $text-color;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.5;
   margin: 0;
   padding: 50px 20px 0;
 
@@ -32,14 +32,20 @@ $table-border: #ddd;
   .category-title {
     font-size: 22px;
     line-height: 26px;
-    margin: 10px 0 0;
+    margin: 10px 0 5px;
 
     .toggle {
-      color: $tf-blue;
+      background-color: $tf-blue;
+      border-radius: 50%;
+      color: $background-color;
       cursor: pointer;
       display: inline-block;
+      height: 28px;
       margin: 0 0 0 10px;
+      text-align: center;
       transition: transform .2s;
+      vertical-align: baseline;
+      width: 28px;
     }
   }
 
@@ -57,12 +63,13 @@ $table-border: #ddd;
     border-left: 1px solid $table-border;
     border-top: 1px solid $table-border;
     padding: 10px 15px 0;
+    vertical-align: top;
 
     h2,
     h3 {
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 700;
-      line-height: 28px;
+      line-height: 1.5;
     }
   }
 
@@ -140,43 +147,49 @@ $table-border: #ddd;
   padding: 5px;
   transition: max-height .2s, opacity .2s, padding .2s;
 
+  .issue-item {
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 3px;
+
+    &.active {
+      background-color: $tf-blue;
+      color: $background-color;
+    }
+  }
+
+  .issue-select-all {
+    border: solid 1px $table-border;
+    border-radius: 4px;
+    font-size: 16px !important;
+    padding: 0 10px;
+  }
+
   li {
     display: block;
 
-    .individual-taxes::before {
+    .issue-category::before {
       border-bottom: solid 1px $table-border;
-      content: 'Individual Taxes: ';
       display: block;
+      font-weight: 700;
       margin: 0 15px 0 0;
+    }
+
+    .individual-taxes::before {
+      content: 'Individual Taxes: ';
+
     }
 
     .corporate-taxes::before {
-      border-bottom: solid 1px $table-border;
       content: 'Corporate Taxes: ';
-      display: block;
-      margin: 0 15px 0 0;
     }
 
     .other-taxes::before {
-      border-bottom: solid 1px $table-border;
       content: 'Other Taxes: ';
-      display: block;
-      margin: 0 15px 0 0;
-    }
-
-    li {
-      border-radius: 5px;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      margin: 5px;
-      padding: 3px;
-
-      &.active {
-        background-color: $tf-blue;
-        color: $background-color;
-      }
     }
   }
 }
@@ -346,4 +359,15 @@ $table-border: #ddd;
 #jim-webb::before,
 .jim-webb-position h3::before {
   background-image: url('images/Jim_Webb.png');
+}
+
+#select-all-candidates {
+  border: solid 1px $table-border;
+  border-radius: 4px;
+}
+
+.expansion-note {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 0 0 10px;
 }
