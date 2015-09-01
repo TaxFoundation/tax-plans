@@ -35,21 +35,21 @@ ul(class='issues-list inactive')
   li
     ul(class='issue-category individual-taxes')
       li(class='issue-item' id='income-tax-rates' onclick='toggleIssues("income-tax-rates")' class='active') Rates on Ordinary Income
-      li(class='issue-item' id='income-itemized-deductions' onclick='toggleIssues("income-itemized-deductions")') Changes to Itemized Deductions
-      li(class='issue-item' id='income-changes-credits' onclick='toggleIssues("income-changes-credits")') Changes to Credits
-      li(class='issue-item' id='income-changes-amt' onclick='toggleIssues("income-changes-amt")') Changes to Alternative Minimum Tax
+      li(class='issue-item' id='income-itemized-deductions' onclick='toggleIssues("income-itemized-deductions")') Itemized Deductions
+      li(class='issue-item' id='income-changes-credits' onclick='toggleIssues("income-changes-credits")') Credits
+      li(class='issue-item' id='income-changes-amt' onclick='toggleIssues("income-changes-amt")') Alternative Minimum Tax
       li(class='issue-item' id='income-cap-gains-dividends' onclick='toggleIssues("income-cap-gains-dividends")' class='active') Rates on Capital Gains and Dividends
   li
     ul(class='issue-category corporate-taxes')
-      li(class='issue-item' id='corporate-tax-rate' onclick='toggleIssues("corporate-tax-rate")' class='active') Top Rates
-      li(class='issue-item' id='corporate-expensing' onclick='toggleIssues("corporate-expensing")') Capital Expenses
+      li(class='issue-item' id='corporate-tax-rate' onclick='toggleIssues("corporate-tax-rate")' class='active') Rate
+      li(class='issue-item' id='corporate-expensing' onclick='toggleIssues("corporate-expensing")') Capital Investment
       li(class='issue-item' id='corporate-international' onclick='toggleIssues("corporate-international")') International Income
-      li(class='issue-item' id='corporate-non-corporate' onclick='toggleIssues("corporate-non-corporate")') Non-corporate Business Income
+      li(class='issue-item' id='corporate-non-corporate' onclick='toggleIssues("corporate-non-corporate")') Pass-through Business Income
   li
     ul(class='issue-category other-taxes')
       li(class='issue-item' id='payroll-tax' onclick='toggleIssues("payroll-tax")') Payroll Taxes
-      li(class='issue-item' id='estate-tax' onclick='toggleIssues("estate-tax")' class='active') Estate Taxes
-      li(class='issue-item' id='other-tax' onclick='toggleIssues("other-tax")') Other
+      li(class='issue-item' id='estate-tax' onclick='toggleIssues("estate-tax")' class='active') Estate Tax
+      li(class='issue-item' id='other-tax' onclick='toggleIssues("other-tax")') Other Taxes
   li(class='issue-item issue-select-all' onclick='selectAllIssues()') Select All
 
 table
@@ -60,7 +60,7 @@ table
   tbody
     tr(class='issue-row income-tax-rates')
       td
-        h2 Income Tax - Rates on Ordinary Income
+        h2 Income Tax: Rates on Ordinary Income
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -174,7 +174,7 @@ table
             p No specific proposal.
     tr(class='issue-row income-itemized-deductions row-inactive')
       td
-        h2 Income Tax - Changes to Itemized Deductions
+        h2 Income Tax: Itemized Deductions
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -288,7 +288,7 @@ table
             p No specific proposal.
     tr(class='issue-row income-changes-credits row-inactive')
       td
-        h2 Income Tax - Changes to Credits
+        h2 Income Tax: Credits
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -402,7 +402,7 @@ table
             p No specific proposal.
     tr(class='issue-row income-changes-amt row-inactive')
       td
-        h2 Income Tax - Changes to Alternative Minimum Tax
+        h2 Income Tax: Alternative Minimum Tax
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -516,7 +516,7 @@ table
             p No specific proposal.
     tr(class='issue-row income-cap-gains-dividends')
       td
-        h2 Income Tax - Rates on Capital Gains and Dividends
+        h2 Income Tax: Rates on Capital Gains and Dividends
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -630,7 +630,7 @@ table
             p No specific proposal.
     tr(class='issue-row corporate-tax-rate')
       td
-        h2 Corporate Income Tax - Top Rates
+        h2 Corporate Income Tax: Rate
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -744,7 +744,7 @@ table
             p No specific proposal.
     tr(class='issue-row corporate-expensing row-inactive')
       td
-        h2 Corporate Income Tax - Capital Expenses
+        h2 Corporate Income Tax: Capital Investment
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -858,7 +858,7 @@ table
             p No specific proposal.
     tr(class='issue-row corporate-international row-inactive')
       td
-        h2 Corporate Income Tax - International Income
+        h2 Corporate Income Tax: International Income
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -972,7 +972,7 @@ table
             p No specific proposal.
     tr(class='issue-row corporate-non-corporate row-inactive')
       td
-        h2 Corporate Income Tax - Non-corporate Business Income
+        h2 Corporate Income Tax: Pass-through Business Income
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
@@ -1314,7 +1314,7 @@ table
             p No specific proposal.
     tr(class='issue-row other-tax row-inactive')
       td
-        h2 Other
+        h2 Other Taxes
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
