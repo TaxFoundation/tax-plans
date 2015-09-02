@@ -1,0 +1,78 @@
+<style type="text/css">
+a.social-link {
+     display:inline;
+     background-color: #aaa;
+     color:#fff !important;
+     text-decoration:none;
+     padding:6px 12px;
+     margin: 0;
+     -webkit-transition: background 0.1s linear;
+     -moz-transition: background 0.1s linear;
+     -ms-transition: background 0.1s linear;
+     -o-transition: background 0.1s linear;
+     transition: background 0.1s linear;
+}
+a:hover.facebook {
+     background-color:#4a66b7;
+}
+a:hover.twitter {
+     background-color:#00acee;
+}
+a:hover.linkedin {
+     background-color:#1b86bc;
+}
+a:hover.gplus {
+     background-color:#dd4b38;
+}
+a:hover.email {
+     background-color:#ff9600;
+}</style>
+<p>
+<a class="social-link facebook" href="" id="fb-share" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook"></i> Share</a>
+<a class="social-link twitter" href="" id="tweet" rel="nofollow" target="_blank" title="Tweet this Page"><i class="fa fa-twitter"></i> Tweet</a>
+<a class="social-link linkedin" href="" id="linkedin" rel="nofollow" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin"></i> LinkedIn</a>
+<a class="social-link gplus" href="" id="gplus-share" title="Plus 1 on Google+"><i class="fa fa-google-plus"></i></a>
+<a class="social-link email" href="" id="email-share" title="Email to a Friend"><i class="fa fa-envelope"></i></a>
+<script type="text/javascript">
+     jQuery(document).ready(function($){
+          function getFBShares(page){
+               var shares;
+               $.getJSON("http://graph.facebook.com/?ids=" + page, function(data){
+                    if (data[page].shares > 1){
+                         shares = data[page].shares;
+                         $("#fb-share").append(" (" + shares + ")");
+                    }
+               });
+          }
+          function getTweets(page){
+               var tweets;
+               $.getJSON("http://urls.api.twitter.com/1/urls/count.json?url=" + page + "&callback=?", function(data){
+                    if (data.count > 1) {
+                         tweets = data.count;
+                         $("#tweet").append(" (" + tweets + ")");
+                    }
+               });
+          }
+          function getLinkedIn(page){
+               var linkedinCount;
+               $.getJSON("http://www.linkedin.com/countserv/count/share?url=" + page + "&callback=?", function(data){
+                    if (data.count > 1) {
+                         linkedinCount = data.count;
+                         $("#linkedin").append(" (" + linkedinCount + ")");
+                    }
+               });
+          }
+
+          var Url = window.location.href;
+          var UrlEncoded = encodeURIComponent(Url);
+          var title = encodeURIComponent(document.getElementById("page-title").innerText);
+          getFBShares(Url);
+          getTweets(Url);
+          getLinkedIn(Url);
+          document.getElementById("fb-share").href="http://www.facebook.com/share.php?u=" + UrlEncoded;
+          document.getElementById("tweet").href="http://twitter.com/home?status=" + title + " via @TaxFoundation " + UrlEncoded;
+          document.getElementById("linkedin").href="http://www.linkedin.com/shareArticle?mini=true&url=" + UrlEncoded + "&title=" + title;
+          document.getElementById("gplus-share").href="https://plus.google.com/share?url=" + UrlEncoded;
+          document.getElementById("email-share").href="mailto:?body=Take a look at this page I found by the Tax Foundation. You can read it here: " + Url;
+     });
+</script></p>
