@@ -15,6 +15,10 @@ $table-border: #ddd;
     margin: 0;
   }
 
+  li {
+    list-style-position: inside !important;
+  }
+
   h1 {
     font-size: 28px;
     font-weight: 700;
