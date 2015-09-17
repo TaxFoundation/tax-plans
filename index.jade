@@ -19,7 +19,7 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("martin-omalley")' id='martin-omalley') Martin O'Malley
   li(onclick='toggleCandidate("george-pataki")' id='george-pataki') George Pataki
   li(onclick='toggleCandidate("rand-paul")' id='rand-paul' class='active') Rand Paul
-  li(onclick='toggleCandidate("rick-perry")' id='rick-perry') Rick Perry
+  li(onclick='toggleCandidate("rick-perry")' id='rick-perry' class='dropped') Rick Perry
   li(onclick='toggleCandidate("marco-rubio")' id='marco-rubio' class='active') Marco Rubio
   li(onclick='toggleCandidate("bernie-sanders")' id='bernie-sanders' class='active') Bernie Sanders
   li(onclick='toggleCandidate("rick-santorum")' id='rick-santorum') Rick Santorum
@@ -137,7 +137,7 @@ table
             p Establishes a flat rate of 14.5% on all ordinary income. Increases the standard deduction to $15,000 per filer. Increases the personal exemption to $5,000 per person.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -251,7 +251,7 @@ table
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -365,7 +365,7 @@ table
             p Eliminates all credits except for the earned income tax credit and the child tax credit.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -479,7 +479,7 @@ table
             p Eliminates the alternative minimum tax.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -593,7 +593,7 @@ table
             p Lowers the rate on capital gains and dividends income to 14.5%.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -707,7 +707,7 @@ table
             p Replaces the corporate tax with a 14.5% business transfer tax, which applies to all capital income and labor payments.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -821,7 +821,7 @@ table
             p Moves to full expensing of investment costs.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -935,7 +935,7 @@ table
             p Shifts to a territorial tax system.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -1049,7 +1049,7 @@ table
               p Taxes pass-through business income at 14.5%.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
             div(class='candidate-position-text')
               p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -1163,7 +1163,7 @@ table
             p Eliminates the payroll tax.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -1277,7 +1277,7 @@ table
             p Eliminates the estate tax.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position marco-rubio-position')
@@ -1369,7 +1369,7 @@ table
           div(class='candidate-name')
             h3 Bobby Jindal
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Taxes carried interest at ordinary income rates.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
             h3 John Kasich
@@ -1385,7 +1385,7 @@ table
           div(class='candidate-name')
             h3 George Pataki
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Taxes carried interest at ordinary income rates.
         div(class='candidate-position rand-paul-position')
           div(class='candidate-name')
             h3 Rand Paul
@@ -1393,7 +1393,7 @@ table
             p No specific proposal.
         div(class='candidate-position rick-perry-position inactive')
           div(class='candidate-name')
-            h3 Rick Perry
+            h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
@@ -1434,5 +1434,6 @@ table
         p The candidates listed have been chosen based on #[a(href='http://www.nytimes.com/interactive/2016/us/elections/2016-presidential-candidates.html') this list] from the New York Times.
 h2 Updates
 ul
-  li 9/11/2015: Updated notes to clarify which candidates are included in our list. While not presently elligible for inclusion in our list, candidate #[a(href='https://twitter.com/VerminSupreme/status/642364325848588288') Vermin Supreme assured the Tax Foundation] on Twitter that "under a Supreme administration, taxes would be the least of your worries."
+  li 9/17/2015: Updated Bobby Jindal and George Pataki in the Other category after statements made during previous night's GOP debate.
+  li 9/11/2015: Updated notes to clarify which candidates are included in our list. While not presently eligible for inclusion in our list, candidate #[a(href='https://twitter.com/VerminSupreme/status/642364325848588288') Vermin Supreme assured the Tax Foundation] on Twitter that "under a Supreme administration, taxes would be the least of your worries."
   li 9/9/2015: Details of Jeb Bush's tax plan added.

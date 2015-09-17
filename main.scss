@@ -385,3 +385,11 @@ $table-border: #ddd;
   font-style: italic;
   margin: 0 0 0 10px;
 }
+
+.dropped {
+  color: #999999;
+
+  &::before {
+    filter: grayscale(100%);
+  }
+}
