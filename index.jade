@@ -24,7 +24,7 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("bernie-sanders")' id='bernie-sanders' class='active') Bernie Sanders
   li(onclick='toggleCandidate("rick-santorum")' id='rick-santorum') Rick Santorum
   li(onclick='toggleCandidate("donald-trump")' id='donald-trump') Donald Trump
-  li(onclick='toggleCandidate("scott-walker")' id='scott-walker') Scott Walker
+  li(onclick='toggleCandidate("scott-walker")' id='scott-walker' class='dropped') Scott Walker
   li(onclick='toggleCandidate("jim-webb")' id='jim-webb') Jim Webb
   li(onclick='selectAllCandidates()' id='select-all-candidates') Select All
 h2(class='category-title') Issues
@@ -159,10 +159,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Establishes four tax brackets of 0%, 10%, 20%, and 25%. The top rate applies to income over $150,000 for single filers, or $300,000 for married filers.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -273,10 +273,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Would means-test or otherwise phase out all deductions except for charitable and mortgage interest.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -390,7 +390,7 @@ table
             p No specific proposal.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -501,10 +501,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Eliminates the alternative minimum tax.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -615,10 +615,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Lowers the top rate from 23.8% to 20% through the elimination of the surtax on investment income.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -729,10 +729,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Lowers the top corporate rate to 15%.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -846,7 +846,7 @@ table
             p No specific proposal.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -957,10 +957,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Would end the deferral of overseas corporate income but preserve the foreign tax credit. Would enact a one-time repatriation tax in transition.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -1071,10 +1071,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
             div(class='candidate-position-text')
-              p No specific proposal.
+              p Taxes pass-through business income at 15%.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
             div(class='candidate-position-text')
               p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -1188,7 +1188,7 @@ table
             p No specific proposal.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -1299,10 +1299,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Eliminates the estate tax.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -1416,10 +1416,10 @@ table
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
-            p Taxes carried interest at ordinary income rates.
+            p Would place a "reasonable cap" on the deductibility of interest against the corporate income tax.
         div(class='candidate-position scott-walker-position inactive')
           div(class='candidate-name')
-            h3 Scott Walker
+            h3(class='dropped') Scott Walker
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-webb-position inactive')
@@ -1434,6 +1434,7 @@ table
         p The candidates listed have been chosen based on #[a(href='http://www.nytimes.com/interactive/2016/us/elections/2016-presidential-candidates.html') this list] from the New York Times.
 h2 Updates
 ul
+  li 9/28/2015: Details of Donald Trump's tax plan added.
   li 9/17/2015: Updated Bobby Jindal and George Pataki in the Other category after statements made during previous night's GOP debate.
   li 9/11/2015: Updated notes to clarify which candidates are included in our list. While not presently eligible for inclusion in our list, candidate #[a(href='https://twitter.com/VerminSupreme/status/642364325848588288') Vermin Supreme assured the Tax Foundation] on Twitter that "under a Supreme administration, taxes would be the least of your worries."
   li 9/9/2015: Details of Jeb Bush's tax plan added.
