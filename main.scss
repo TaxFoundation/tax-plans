@@ -325,6 +325,11 @@ $table-border: #ddd;
   background-image: url('http://static.taxfoundation.org/tax-plans/images/John_Kasich.png');
 }
 
+#lawrence-lessig::before,
+.lawrence-lessig-position h3::before {
+  background-image: url('http://static.taxfoundation.org/tax-plans/images/Lawrence_Lessig.png');
+}
+
 #martin-omalley::before,
 .martin-omalley-position h3::before {
   background-image: url('http://static.taxfoundation.org/tax-plans/images/Martin_OMalley.png');
