@@ -16,7 +16,7 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("mike-huckabee")' id='mike-huckabee') Mike Huckabee
   li(onclick='toggleCandidate("bobby-jindal")' id='bobby-jindal') Bobby Jindal
   li(onclick='toggleCandidate("john-kasich")' id='john-kasich') John Kasich
-  li(onclick='toggleCandidate("lawrence-lessig")' id='lawrence-lessig') Lawrence Lessig
+  li(onclick='toggleCandidate("lawrence-lessig")' id='lawrence-lessig' class='dropped') Lawrence Lessig
   li(onclick='toggleCandidate("martin-omalley")' id='martin-omalley') Martin O'Malley
   li(onclick='toggleCandidate("george-pataki")' id='george-pataki') George Pataki
   li(onclick='toggleCandidate("rand-paul")' id='rand-paul' class='active') Rand Paul
@@ -123,7 +123,7 @@ table
             p Establishes three brackets, with a top rate of 28%.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -242,7 +242,7 @@ table
             p No specific proposal.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -361,7 +361,7 @@ table
             p Increases the Earned Income Tax Credit by 10%
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -480,7 +480,7 @@ table
             p No specific proposal.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -599,7 +599,7 @@ table
             p Lowers the rate on long-term capital gains to 15%.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -718,7 +718,7 @@ table
             p Lowers the top corporate rate to 25%.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -837,7 +837,7 @@ table
             p Moves to full expensing of investment costs.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -953,10 +953,10 @@ table
           div(class='candidate-name')
             h3 John Kasich
           div(class='candidate-position-text')
-            p Shifts to a territorial tax system and enacts a deemed repatriation at a "low rate."
+            p Shifts to a territorial tax system and allows repatriation of deferred earnings with no tax.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -1075,7 +1075,7 @@ table
               p No specific proposal.
           div(class='candidate-position lawrence-lessig-position inactive')
             div(class='candidate-name')
-              h3 Lawrence Lessig
+              h3(class='dropped') Lawrence Lessig
             div(class='candidate-position-text')
               p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -1194,7 +1194,7 @@ table
             p No specific proposal.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -1313,7 +1313,7 @@ table
             p Eliminates the estate tax.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -1434,7 +1434,7 @@ table
             p Doubles the research and development credit for businesses with under $20 million in gross revenues.
         div(class='candidate-position lawrence-lessig-position inactive')
           div(class='candidate-name')
-            h3 Lawrence Lessig
+            h3(class='dropped') Lawrence Lessig
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position martin-omalley-position inactive')
@@ -1496,6 +1496,7 @@ table
         p The candidates listed have been chosen based on #[a(href='http://www.nytimes.com/interactive/2016/us/elections/2016-presidential-candidates.html') this list] from the New York Times.
 h2 Updates
 ul
+  li 11/2/2015: Lawrence Lessig drops out. Update to John Kasich's position on internationally earned corporate income.
   li 10/30/2015: Updated Ben Carson's position on the estate tax. Updated Chris Christie's position on Capital Investment.
   li 10/29/2015: Added Ted Cruz's tax plan.
   li 10/28/2015: Updated Marco Rubio's proposed brackets.
