@@ -9,7 +9,7 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("lincoln-chafee")' id='lincoln-chafee' class='dropped') Lincoln Chafee
   li(onclick='toggleCandidate("chris-christie")' id='chris-christie') Chris Christie
   li(onclick='toggleCandidate("hillary-clinton")' id='hillary-clinton' class='active') Hillary Clinton
-  li(onclick='toggleCandidate("ted-cruz")' id='ted-cruz') Ted Cruz
+  li(onclick='toggleCandidate("ted-cruz")' id='ted-cruz'  class='active') Ted Cruz
   li(onclick='toggleCandidate("carly-fiorina")' id='carly-fiorina') Carly Fiorina
   li(onclick='toggleCandidate("jim-gilmore")' id='jim-gilmore') Jim Gilmore
   li(onclick='toggleCandidate("lindsey-graham")' id='lindsey-graham' class='dropped') Lindsey Graham
@@ -19,12 +19,12 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("lawrence-lessig")' id='lawrence-lessig' class='dropped') Lawrence Lessig
   li(onclick='toggleCandidate("martin-omalley")' id='martin-omalley' class='dropped') Martin O'Malley
   li(onclick='toggleCandidate("george-pataki")' id='george-pataki' class='dropped') George Pataki
-  li(onclick='toggleCandidate("rand-paul")' id='rand-paul' class='active') Rand Paul
+  li(onclick='toggleCandidate("rand-paul")' id='rand-paul') Rand Paul
   li(onclick='toggleCandidate("rick-perry")' id='rick-perry' class='dropped') Rick Perry
   li(onclick='toggleCandidate("marco-rubio")' id='marco-rubio' class='active') Marco Rubio
   li(onclick='toggleCandidate("bernie-sanders")' id='bernie-sanders' class='active') Bernie Sanders
   li(onclick='toggleCandidate("rick-santorum")' id='rick-santorum') Rick Santorum
-  li(onclick='toggleCandidate("donald-trump")' id='donald-trump') Donald Trump
+  li(onclick='toggleCandidate("donald-trump")' id='donald-trump'  class='active') Donald Trump
   li(onclick='toggleCandidate("scott-walker")' id='scott-walker' class='dropped') Scott Walker
   li(onclick='toggleCandidate("jim-webb")' id='jim-webb' class="dropped") Jim Webb
   li(onclick='selectAllCandidates()' id='select-all-candidates') Select All
@@ -86,7 +86,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Adds a 4% surtax on income over $5 million.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -136,7 +136,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -161,7 +161,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Establishes a flat rate of 20% on all ordinary income.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -205,7 +205,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Caps the tax benefit of itemized deductions at 28% of the deduction.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -255,7 +255,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -280,7 +280,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction. Caps the mortgage interest deduction at $25,000 of interest payments.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -324,7 +324,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Creates a new tax credit of up to $1,200 for caregivers.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -374,7 +374,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -399,7 +399,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Replaces the standard deduction, personal exemption, and Earned Income Tax Credit with a refundable personal credit of $2,750.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -443,7 +443,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Creates a new minimum 30 percent rate on individuals earning over $1 million.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -493,7 +493,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -518,7 +518,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Eliminates the Alternative Minimum Tax.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -562,7 +562,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Adds a 4% surtax on income over $5 million. Raises rates on medium-term capital gains (investments held for less than six years) to between 24% and 39.6%.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -612,7 +612,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -637,7 +637,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Retains a 20% rate on capital gains and dividends income.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -681,7 +681,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -731,7 +731,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 24%. Lowers the top rate on manufacturers to 12%.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -756,7 +756,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 20%. Lowers the rate for manufacturing corporations to 0%, raising it gradually afterward.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -800,7 +800,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -850,7 +850,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -875,7 +875,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -919,7 +919,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Strengthens rules preventing inversions. Imposes an "exit tax" on unrepatriated earnings of U.S. firms going through inversions.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -969,7 +969,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -994,7 +994,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Enacts a deemed repatriation of foreign income at a 10% rate.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -1038,7 +1038,7 @@ table
             h3 Hillary Clinton
             div(class='candidate-position-text')
               p No specific proposal.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
             div(class='candidate-position-text')
@@ -1088,7 +1088,7 @@ table
             h3(class='dropped') George Pataki
             div(class='candidate-position-text')
               p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
             div(class='candidate-position-text')
@@ -1113,7 +1113,7 @@ table
             h3 Rick Santorum
             div(class='candidate-position-text')
               p No specific proposal.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
             div(class='candidate-position-text')
@@ -1157,7 +1157,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -1207,7 +1207,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -1232,7 +1232,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -1276,7 +1276,7 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Increases the top estate tax rate to 45%, and lowers the estate tax exclusion to $3.5 million.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -1326,7 +1326,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -1351,7 +1351,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Eliminates the estate tax.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
@@ -1397,7 +1397,7 @@ table
             p Establishes business tax credits for profit-sharing and apprenticeships.
             p Taxes carried interest at ordinary income rates.
             p Establishes a tax on high-frequency financial transactions.
-        div(class='candidate-position ted-cruz-position inactive')
+        div(class='candidate-position ted-cruz-position')
           div(class='candidate-name')
             h3 Ted Cruz
           div(class='candidate-position-text')
@@ -1448,7 +1448,7 @@ table
             h3(class='dropped') George Pataki
           div(class='candidate-position-text')
             p Taxes carried interest at ordinary income rates.
-        div(class='candidate-position rand-paul-position')
+        div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
             h3 Rand Paul
           div(class='candidate-position-text')
@@ -1475,7 +1475,7 @@ table
             h3 Rick Santorum
           div(class='candidate-position-text')
             p Eliminates the deductibility of interest.
-        div(class='candidate-position donald-trump-position inactive')
+        div(class='candidate-position donald-trump-position')
           div(class='candidate-name')
             h3 Donald Trump
           div(class='candidate-position-text')
