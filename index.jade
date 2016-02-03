@@ -19,7 +19,7 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("lawrence-lessig")' id='lawrence-lessig' class='dropped') Lawrence Lessig
   li(onclick='toggleCandidate("martin-omalley")' id='martin-omalley' class='dropped') Martin O'Malley
   li(onclick='toggleCandidate("george-pataki")' id='george-pataki' class='dropped') George Pataki
-  li(onclick='toggleCandidate("rand-paul")' id='rand-paul') Rand Paul
+  li(onclick='toggleCandidate("rand-paul")' id='rand-paul' class='dropped') Rand Paul
   li(onclick='toggleCandidate("rick-perry")' id='rick-perry' class='dropped') Rick Perry
   li(onclick='toggleCandidate("marco-rubio")' id='marco-rubio' class='active') Marco Rubio
   li(onclick='toggleCandidate("bernie-sanders")' id='bernie-sanders' class='active') Bernie Sanders
@@ -138,7 +138,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Establishes a flat rate of 14.5% on all ordinary income. Increases the standard deduction to $15,000 per filer. Increases the personal exemption to $5,000 per person.
         div(class='candidate-position rick-perry-position inactive')
@@ -257,7 +257,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction.
         div(class='candidate-position rick-perry-position inactive')
@@ -376,7 +376,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Eliminates all credits except for the earned income tax credit and the child tax credit.
         div(class='candidate-position rick-perry-position inactive')
@@ -495,7 +495,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Eliminates the alternative minimum tax.
         div(class='candidate-position rick-perry-position inactive')
@@ -614,7 +614,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Lowers the rate on capital gains and dividends income to 14.5%.
         div(class='candidate-position rick-perry-position inactive')
@@ -733,7 +733,7 @@ table
             p Lowers the top corporate rate to 24%. Lowers the top rate on manufacturers to 12%.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Replaces the corporate tax with a 14.5% business transfer tax, which applies to all capital income and labor payments.
         div(class='candidate-position rick-perry-position inactive')
@@ -852,7 +852,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position rick-perry-position inactive')
@@ -971,7 +971,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Shifts to a territorial tax system.
         div(class='candidate-position rick-perry-position inactive')
@@ -1090,7 +1090,7 @@ table
               p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
             div(class='candidate-position-text')
               p Taxes pass-through business income at 14.5%.
         div(class='candidate-position rick-perry-position inactive')
@@ -1209,7 +1209,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Eliminates the payroll tax.
         div(class='candidate-position rick-perry-position inactive')
@@ -1328,7 +1328,7 @@ table
             p No specific proposal.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position rick-perry-position inactive')
@@ -1450,7 +1450,7 @@ table
             p Taxes carried interest at ordinary income rates.
         div(class='candidate-position rand-paul-position inactive')
           div(class='candidate-name')
-            h3 Rand Paul
+            h3(class='dropped') Rand Paul
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position rick-perry-position inactive')
@@ -1497,6 +1497,7 @@ table
         p The candidates listed have been chosen based on #[a(href='http://www.nytimes.com/interactive/2016/us/elections/2016-presidential-candidates.html') this list] from the New York Times.
 h2 Updates
 ul
+  li 2/3/2016: Paul drops out.
   li 2/2/2016: Huckabee and O'Malley drop out.
   li 1/26/2016: Edits to Clinton and Sanders.
   li 1/18/2016: Updates to Sanders.
