@@ -7,10 +7,10 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("jeb-bush")' id='jeb-bush') Jeb Bush
   li(onclick='toggleCandidate("ben-carson")' id='ben-carson') Ben Carson
   li(onclick='toggleCandidate("lincoln-chafee")' id='lincoln-chafee' class='dropped') Lincoln Chafee
-  li(onclick='toggleCandidate("chris-christie")' id='chris-christie') Chris Christie
+  li(onclick='toggleCandidate("chris-christie")' id='chris-christie' class='dropped') Chris Christie
   li(onclick='toggleCandidate("hillary-clinton")' id='hillary-clinton' class='active') Hillary Clinton
-  li(onclick='toggleCandidate("ted-cruz")' id='ted-cruz'  class='active') Ted Cruz
-  li(onclick='toggleCandidate("carly-fiorina")' id='carly-fiorina') Carly Fiorina
+  li(onclick='toggleCandidate("ted-cruz")' id='ted-cruz' class='active') Ted Cruz
+  li(onclick='toggleCandidate("carly-fiorina")' id='carly-fiorina' class='dropped') Carly Fiorina
   li(onclick='toggleCandidate("jim-gilmore")' id='jim-gilmore') Jim Gilmore
   li(onclick='toggleCandidate("lindsey-graham")' id='lindsey-graham' class='dropped') Lindsey Graham
   li(onclick='toggleCandidate("mike-huckabee")' id='mike-huckabee' class='dropped') Mike Huckabee
@@ -78,7 +78,7 @@ table
             p Adds a new bracket with a rate of approximately 45%, for income over $750,000. Increases the personal exemption by $1000.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p Establishes three brackets, with a top rate of 28% and a bottom rate of 8%.
         div(class='candidate-position hillary-clinton-position')
@@ -93,7 +93,7 @@ table
             p Establishes a flat rate of 10% on all ordinary income. Increases the standard deduction to $10,000 per filer.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -197,7 +197,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction.
         div(class='candidate-position hillary-clinton-position')
@@ -212,7 +212,7 @@ table
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -316,7 +316,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position hillary-clinton-position')
@@ -331,7 +331,7 @@ table
             p Eliminates all credits except for the earned income tax credit and the child tax credit. Expands the earned income tax credit by 20%.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -435,7 +435,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position hillary-clinton-position')
@@ -450,7 +450,7 @@ table
             p Eliminates the Alternative Minimum Tax.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -554,7 +554,7 @@ table
             p Adds a new bracket with a rate of 28.8%, for capital gains and dividends income earned by taxpayers making over $750,000.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position hillary-clinton-position')
@@ -569,7 +569,7 @@ table
             p Lowers the rate on capital gains and dividends income to 10%.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -673,7 +673,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 25%.
         div(class='candidate-position hillary-clinton-position')
@@ -688,7 +688,7 @@ table
             p Replaces the corporate income tax with a 16% business transfer tax, which applies to all capital income and labor payments.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -792,7 +792,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position hillary-clinton-position')
@@ -807,7 +807,7 @@ table
             p Moves to full expensing of investment costs.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -911,7 +911,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p Enacts a deemed repatriation of foreign income at an 8.75% rate.
         div(class='candidate-position hillary-clinton-position')
@@ -926,7 +926,7 @@ table
             p Shifts to a territorial tax system and enacts a deemed repatriation of foreign income at a 10% rate.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -1030,7 +1030,7 @@ table
               p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
             div(class='candidate-position-text')
               p No specific proposal.
         div(class='candidate-position hillary-clinton-position')
@@ -1045,7 +1045,7 @@ table
               p Taxes pass-through business income at 10%.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
             div(class='candidate-position-text')
               p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -1149,7 +1149,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p Eliminates the payroll tax for workers over 62 and under 21.
         div(class='candidate-position hillary-clinton-position')
@@ -1164,7 +1164,7 @@ table
             p Eliminates the payroll tax.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -1268,7 +1268,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position hillary-clinton-position')
@@ -1283,7 +1283,7 @@ table
             p Eliminates the estate tax.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -1387,7 +1387,7 @@ table
             p No specific proposal.
         div(class='candidate-position chris-christie-position inactive')
           div(class='candidate-name')
-            h3 Chris Christie
+            h3(class='dropped') Chris Christie
           div(class='candidate-position-text')
             p Makes the research and development tax credit permanent.
         div(class='candidate-position hillary-clinton-position')
@@ -1404,7 +1404,7 @@ table
             p Creates tax-free savings accounts for up to $25,000 of savings a year.
         div(class='candidate-position carly-fiorina-position inactive')
           div(class='candidate-name')
-            h3 Carly Fiorina
+            h3(class='dropped') Carly Fiorina
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
@@ -1497,6 +1497,7 @@ table
         p The candidates listed have been chosen based on #[a(href='http://www.nytimes.com/interactive/2016/us/elections/2016-presidential-candidates.html') this list] from the New York Times.
 h2 Updates
 ul
+  li 2/10/2016: Christie and Fiorina drop out.
   li 2/3/2016: Paul and Santorum drop out.
   li 2/2/2016: Huckabee and O'Malley drop out.
   li 1/26/2016: Edits to Clinton and Sanders.
