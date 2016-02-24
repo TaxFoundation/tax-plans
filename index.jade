@@ -4,14 +4,14 @@ p To select from different candidates and issues, click the blue arrow buttons b
 h2(class='category-title') Candidates
   strong(class='toggle candidate-toggle' onclick='showCandidates()') &xwedge;
 ul(class='candidate-list')
-  li(onclick='toggleCandidate("jeb-bush")' id='jeb-bush') Jeb Bush
+  li(onclick='toggleCandidate("jeb-bush")' id='jeb-bush' class='dropped') Jeb Bush
   li(onclick='toggleCandidate("ben-carson")' id='ben-carson') Ben Carson
   li(onclick='toggleCandidate("lincoln-chafee")' id='lincoln-chafee' class='dropped') Lincoln Chafee
   li(onclick='toggleCandidate("chris-christie")' id='chris-christie' class='dropped') Chris Christie
   li(onclick='toggleCandidate("hillary-clinton")' id='hillary-clinton' class='active') Hillary Clinton
   li(onclick='toggleCandidate("ted-cruz")' id='ted-cruz' class='active') Ted Cruz
   li(onclick='toggleCandidate("carly-fiorina")' id='carly-fiorina' class='dropped') Carly Fiorina
-  li(onclick='toggleCandidate("jim-gilmore")' id='jim-gilmore') Jim Gilmore
+  li(onclick='toggleCandidate("jim-gilmore")' id='jim-gilmore' class='dropped') Jim Gilmore
   li(onclick='toggleCandidate("lindsey-graham")' id='lindsey-graham' class='dropped') Lindsey Graham
   li(onclick='toggleCandidate("mike-huckabee")' id='mike-huckabee' class='dropped') Mike Huckabee
   li(onclick='toggleCandidate("bobby-jindal")' id='bobby-jindal' class='dropped') Bobby Jindal
@@ -63,7 +63,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Establishes three tax brackets, with rates of 10%, 25%, and 28%. The top rate applies to taxable income over $85,750 for single filers and $141,200 for joint filers. Increases the standard deduction to $11,300 for single filers and $22,600 for joint filers.
         div(class='candidate-position ben-carson-position inactive')
@@ -98,7 +98,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Establishes three tax brackets, with rates of 10%, 15%, and 25%.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -182,7 +182,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Eliminates the state and local income tax deduction. Caps all remaining deductions, besides the charitable deduction, at 2 percent of adjusted gross income. Eliminates the Pease limitation on itemized deductions.
         div(class='candidate-position ben-carson-position inactive')
@@ -217,7 +217,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -301,7 +301,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Doubles the Earned Income Tax Credit for childless filers, and expands it for filers between 21 and 24.
         div(class='candidate-position ben-carson-position inactive')
@@ -336,7 +336,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Establishes a family tax credit of $4,300 forall households living in poverty.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -420,7 +420,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Eliminates the alternative minimum tax.
         div(class='candidate-position ben-carson-position inactive')
@@ -455,7 +455,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -539,7 +539,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Eliminates the net investment income surtax. Taxes interest income at capital gains and dividend tax rates.
         div(class='candidate-position ben-carson-position inactive')
@@ -574,7 +574,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Lowers the rate on capital gains and dividends income to 0%.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -658,7 +658,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 20%.
         div(class='candidate-position ben-carson-position inactive')
@@ -693,7 +693,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 15%.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -777,7 +777,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position ben-carson-position inactive')
@@ -812,7 +812,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -896,7 +896,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Shifts to a territorial tax system and enacts a deemed repatriation of foreign income at an 8.75% rate.
         div(class='candidate-position ben-carson-position inactive')
@@ -931,7 +931,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Shifts to a territorial tax system.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -1015,7 +1015,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
             div(class='candidate-position-text')
               p No specific proposal.
         div(class='candidate-position ben-carson-position inactive')
@@ -1050,7 +1050,7 @@ table
               p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Taxes pass-through business income at 15%. Taxes all pass-through business on the entity level, rather than on the individual level.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -1134,7 +1134,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Exempts workers over 67 years old from payroll taxes.
         div(class='candidate-position ben-carson-position inactive')
@@ -1169,7 +1169,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -1253,7 +1253,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Eliminates the estate tax and ends step-up basis in capital gains for estates.
         div(class='candidate-position ben-carson-position inactive')
@@ -1288,7 +1288,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -1372,7 +1372,7 @@ table
       td
         div(class='candidate-position jeb-bush-position inactive')
           div(class='candidate-name')
-            h3 Jeb Bush
+            h3(class='dropped') Jeb Bush
           div(class='candidate-position-text')
             p Eliminates the deductibility of interest. Eliminates the personal exemption phase-out. Allows second earners to file their tax returns separately. Taxes carried interest at ordinary income rates.
         div(class='candidate-position ben-carson-position inactive')
@@ -1409,7 +1409,7 @@ table
             p No specific proposal.
         div(class='candidate-position jim-gilmore-position inactive')
           div(class='candidate-name')
-            h3 Jim Gilmore
+            h3(class='dropped') Jim Gilmore
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lindsey-graham-position inactive')
@@ -1497,6 +1497,7 @@ table
         p The candidates listed have been chosen based on #[a(href='http://www.nytimes.com/interactive/2016/us/elections/2016-presidential-candidates.html') this list] from the New York Times.
 h2 Updates
 ul
+  li 2/24/2016: Bush and Gilmore have dropped out.
   li 2/10/2016: Christie and Fiorina drop out.
   li 2/3/2016: Paul and Santorum drop out.
   li 2/2/2016: Huckabee and O'Malley drop out.
