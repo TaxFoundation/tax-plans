@@ -5,7 +5,7 @@ h2(class='category-title') Candidates
   strong(class='toggle candidate-toggle' onclick='showCandidates()') &xwedge;
 ul(class='candidate-list')
   li(onclick='toggleCandidate("jeb-bush")' id='jeb-bush' class='dropped') Jeb Bush
-  li(onclick='toggleCandidate("ben-carson")' id='ben-carson') Ben Carson
+  li(onclick='toggleCandidate("ben-carson")' id='ben-carson' class='dropped') Ben Carson
   li(onclick='toggleCandidate("lincoln-chafee")' id='lincoln-chafee' class='dropped') Lincoln Chafee
   li(onclick='toggleCandidate("chris-christie")' id='chris-christie' class='dropped') Chris Christie
   li(onclick='toggleCandidate("hillary-clinton")' id='hillary-clinton' class='active') Hillary Clinton
@@ -21,7 +21,7 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("george-pataki")' id='george-pataki' class='dropped') George Pataki
   li(onclick='toggleCandidate("rand-paul")' id='rand-paul' class='dropped') Rand Paul
   li(onclick='toggleCandidate("rick-perry")' id='rick-perry' class='dropped') Rick Perry
-  li(onclick='toggleCandidate("marco-rubio")' id='marco-rubio' class='active') Marco Rubio
+  li(onclick='toggleCandidate("marco-rubio")' id='marco-rubio' class='dropped') Marco Rubio
   li(onclick='toggleCandidate("bernie-sanders")' id='bernie-sanders' class='active') Bernie Sanders
   li(onclick='toggleCandidate("rick-santorum")' id='rick-santorum' class='dropped') Rick Santorum
   li(onclick='toggleCandidate("donald-trump")' id='donald-trump'  class='active') Donald Trump
@@ -68,7 +68,7 @@ table
             p Establishes three tax brackets, with rates of 10%, 25%, and 28%. The top rate applies to taxable income over $85,750 for single filers and $141,200 for joint filers. Increases the standard deduction to $11,300 for single filers and $22,600 for joint filers.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Establishes a flat rate of 14.9% on all ordinary income. Alters the standard deduction and personal exemption to exempt wage income under 150% of the federal poverty level of a filer.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -148,7 +148,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Establishes three brackets of 15%, 25%, and 35%. The top rate applies to taxable income over $150,000 for single filers and $300,000 for joint filers.
         div(class='candidate-position bernie-sanders-position')
@@ -187,7 +187,7 @@ table
             p Eliminates the state and local income tax deduction. Caps all remaining deductions, besides the charitable deduction, at 2 percent of adjusted gross income. Eliminates the Pease limitation on itemized deductions.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Eliminates all itemized deductions.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -267,7 +267,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction. Caps the mortgage interest deduction at $300,000 of acquisition debt.
         div(class='candidate-position bernie-sanders-position')
@@ -306,7 +306,7 @@ table
             p Doubles the Earned Income Tax Credit for childless filers, and expands it for filers between 21 and 24.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Eliminates all credits except for the foreign tax credit.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -386,7 +386,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Establishes an additional child credit of $2,500, used to offset income and payroll taxes. Replaces the standard deduction, personal exemption, and 10% bracket with a refundable personal credit.
         div(class='candidate-position bernie-sanders-position')
@@ -425,7 +425,7 @@ table
             p Eliminates the alternative minimum tax.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Eliminates the Alternative Minimum Tax.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -505,7 +505,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Eliminates the alternative minimum tax.
         div(class='candidate-position bernie-sanders-position')
@@ -544,7 +544,7 @@ table
             p Eliminates the net investment income surtax. Taxes interest income at capital gains and dividend tax rates.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Lowers the rate on capital gains and dividends income to 0%.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -624,7 +624,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Lowers the rate on capital gains and dividends income to 0%.
         div(class='candidate-position bernie-sanders-position')
@@ -663,7 +663,7 @@ table
             p Lowers the top corporate rate to 20%.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 14.9%.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -743,7 +743,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 25%.
         div(class='candidate-position bernie-sanders-position')
@@ -782,7 +782,7 @@ table
             p Moves to full expensing of investment costs.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -862,7 +862,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position bernie-sanders-position')
@@ -901,7 +901,7 @@ table
             p Shifts to a territorial tax system and enacts a deemed repatriation of foreign income at an 8.75% rate.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Shifts to a territorial tax system. Allows corporations to repatriate international income tax-free for six months, provided they use 10% of the money in enterprise zones or to create jobs for the unemployed.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -981,7 +981,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Shifts to a territorial tax system and enacts a deemed repatriation of foreign income at a 6% rate.
         div(class='candidate-position bernie-sanders-position')
@@ -1020,7 +1020,7 @@ table
               p No specific proposal.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
             div(class='candidate-position-text')
               p Taxes pass-through business income at 14.9%.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -1100,7 +1100,7 @@ table
               p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
             div(class='candidate-position-text')
               p Taxes pass-through business income at 25%.
         div(class='candidate-position bernie-sanders-position')
@@ -1139,7 +1139,7 @@ table
             p Exempts workers over 67 years old from payroll taxes.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Eliminates the taxation of Social Security benefits and the deduction for the employer-side payroll tax.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -1219,7 +1219,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Eliminates the additional Medicare tax on compensation over $200,000.
         div(class='candidate-position bernie-sanders-position')
@@ -1258,7 +1258,7 @@ table
             p Eliminates the estate tax and ends step-up basis in capital gains for estates.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -1338,7 +1338,7 @@ table
             p Eliminates the estate tax.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position bernie-sanders-position')
@@ -1377,7 +1377,7 @@ table
             p Eliminates the deductibility of interest. Eliminates the personal exemption phase-out. Allows second earners to file their tax returns separately. Taxes carried interest at ordinary income rates.
         div(class='candidate-position ben-carson-position inactive')
           div(class='candidate-name')
-            h3 Ben Carson
+            h3(class='dropped') Ben Carson
           div(class='candidate-position-text')
             p Eliminates the exclusion of fringe benefits. Eliminates the deductibility of interest and exempts interest from taxation for non-financial institutions.
         div(class='candidate-position lincoln-chafee-position inactive')
@@ -1460,7 +1460,7 @@ table
             p No specific proposal.
         div(class='candidate-position marco-rubio-position')
           div(class='candidate-name')
-            h3 Marco Rubio
+            h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
             p Eliminates the head of household filing status. Removes interest income from the tax base, except for interest received by financial institutions. Provides a new tax credit for businesses that offer paid family leave.
         div(class='candidate-position bernie-sanders-position')
