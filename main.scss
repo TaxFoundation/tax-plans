@@ -320,6 +320,11 @@ $table-border: #ddd;
   background-image: url('http://static.taxfoundation.org/tax-plans/images/Bobby_Jindal.png');
 }
 
+#gary-johnson::before,
+.gary-johnson-position h3::before {
+  background-image: url('http://static.taxfoundation.org/tax-plans/images/Gary_Johnson.png');
+}
+
 #john-kasich::before,
 .john-kasich-position h3::before {
   background-image: url('http://static.taxfoundation.org/tax-plans/images/John_Kasich.png');

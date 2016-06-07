@@ -9,13 +9,14 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("lincoln-chafee")' id='lincoln-chafee' class='dropped') Lincoln Chafee
   li(onclick='toggleCandidate("chris-christie")' id='chris-christie' class='dropped') Chris Christie
   li(onclick='toggleCandidate("hillary-clinton")' id='hillary-clinton' class='active') Hillary Clinton
-  li(onclick='toggleCandidate("ted-cruz")' id='ted-cruz' class='active') Ted Cruz
+  li(onclick='toggleCandidate("ted-cruz")' id='ted-cruz' class='dropped') Ted Cruz
   li(onclick='toggleCandidate("carly-fiorina")' id='carly-fiorina' class='dropped') Carly Fiorina
   li(onclick='toggleCandidate("jim-gilmore")' id='jim-gilmore' class='dropped') Jim Gilmore
   li(onclick='toggleCandidate("lindsey-graham")' id='lindsey-graham' class='dropped') Lindsey Graham
   li(onclick='toggleCandidate("mike-huckabee")' id='mike-huckabee' class='dropped') Mike Huckabee
   li(onclick='toggleCandidate("bobby-jindal")' id='bobby-jindal' class='dropped') Bobby Jindal
-  li(onclick='toggleCandidate("john-kasich")' id='john-kasich') John Kasich
+  li(onclick='toggleCandidate("gary-johnson")' id='gary-johnson' class='active') Gary Johnson
+  li(onclick='toggleCandidate("john-kasich")' id='john-kasich' class='dropped') John Kasich
   li(onclick='toggleCandidate("lawrence-lessig")' id='lawrence-lessig' class='dropped') Lawrence Lessig
   li(onclick='toggleCandidate("martin-omalley")' id='martin-omalley' class='dropped') Martin O'Malley
   li(onclick='toggleCandidate("george-pataki")' id='george-pataki' class='dropped') George Pataki
@@ -86,9 +87,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Adds a 4% surtax on income over $5 million.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Establishes a flat rate of 10% on all ordinary income. Increases the standard deduction to $10,000 per filer.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -116,9 +117,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Establishes three tax brackets, with rates of 2%, 10%, and 25%. The top rate applies to taxable income over $90,000 for single filers and $180,000 for joint filers. Eliminates the standard deduction and the personal exemption.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Establishes three brackets, with a top rate of 28%.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -146,7 +152,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -205,9 +211,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Caps the tax benefit of itemized deductions at 28% of the deduction.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -235,9 +241,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Eliminates all itemized deductions, except for the charitable deduction and the mortgage interest deduction. Caps the mortgage interest deduction at $500,000 of acquisition debt. Eliminates the Pease limitation on itemized deductions.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -265,7 +276,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -324,9 +335,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Creates a new tax credit of up to $1,200 for caregivers.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Eliminates all credits except for the earned income tax credit and the child tax credit. Expands the earned income tax credit by 20%.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -354,9 +365,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Replaces the personal exemption with a nonrefundable credit for dependents. Transfers the earned income tax credit to the payroll tax.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Increases the Earned Income Tax Credit by 10%
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -384,7 +400,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -443,9 +459,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Creates a new minimum 30 percent rate on individuals earning over $1 million.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Eliminates the Alternative Minimum Tax.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -473,9 +489,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Eliminates the alternative minimum tax.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -503,7 +524,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -562,9 +583,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Adds a 4% surtax on income over $5 million. Raises rates on medium-term capital gains (investments held for less than six years) to between 24% and 39.6%.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Lowers the rate on capital gains and dividends income to 10%.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -592,9 +613,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Taxes capital gains and dividends as ordinary income. Eliminates the net investment income surtax.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Lowers the rate on long-term capital gains to 15%.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -622,7 +648,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -681,9 +707,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Replaces the corporate income tax with a 16% business transfer tax, which applies to all capital income and labor payments.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -711,9 +737,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Eliminates the corporate income tax.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Lowers the top corporate rate to 25%.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -741,7 +772,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -800,9 +831,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -830,9 +861,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p No specific proposal.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Moves to full expensing of investment costs.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -860,7 +896,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -919,9 +955,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Strengthens rules preventing inversions. Imposes an "exit tax" on unrepatriated earnings of U.S. firms going through inversions.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Shifts to a territorial tax system and enacts a deemed repatriation of foreign income at a 10% rate.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -949,9 +985,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Shifts to a territorial tax system and enacts a deemed repatriation of foreign income at a 8% rate.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Shifts to a territorial tax system and allows repatriation of deferred earnings with no tax.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -979,7 +1020,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -1038,9 +1079,9 @@ table
             h3 Hillary Clinton
             div(class='candidate-position-text')
               p No specific proposal.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
             div(class='candidate-position-text')
               p Taxes pass-through business income at 10%.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -1068,9 +1109,14 @@ table
             h3(class='dropped') Bobby Jindal
             div(class='candidate-position-text')
               p No specific proposal.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
             div(class='candidate-position-text')
               p No specific proposal.
           div(class='candidate-position lawrence-lessig-position inactive')
@@ -1098,7 +1144,7 @@ table
             h3(class='dropped') Rick Perry
             div(class='candidate-position-text')
               p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
             div(class='candidate-position-text')
@@ -1157,9 +1203,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Eliminates the payroll tax.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -1187,9 +1233,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Eliminates the additional Medicare tax on compensation over $200,000.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -1217,7 +1268,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -1276,9 +1327,9 @@ table
             h3 Hillary Clinton
           div(class='candidate-position-text')
             p Increases the top estate tax rate to 45%, and lowers the estate tax exclusion to $3.5 million.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -1306,9 +1357,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Eliminates the estate tax.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Eliminates the estate tax.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -1336,7 +1392,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p Eliminates the estate tax.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
@@ -1397,9 +1453,9 @@ table
             p Establishes business tax credits for profit-sharing and apprenticeships.
             p Taxes carried interest at ordinary income rates.
             p Establishes a tax on high-frequency financial transactions.
-        div(class='candidate-position ted-cruz-position')
+        div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
-            h3 Ted Cruz
+            h3(class='dropped') Ted Cruz
           div(class='candidate-position-text')
             p Creates tax-free savings accounts for up to $25,000 of savings a year.
         div(class='candidate-position carly-fiorina-position inactive')
@@ -1427,9 +1483,14 @@ table
             h3(class='dropped') Bobby Jindal
           div(class='candidate-position-text')
             p Creates tax-free savings accounts for up to $30,000 of savings a year.
+        div(class='candidate-position gary-johnson-position active')
+          div(class='candidate-name')
+            h3 Gary Johnson
+          div(class='candidate-position-text')
+            p No specific proposal.
         div(class='candidate-position john-kasich-position inactive')
           div(class='candidate-name')
-            h3 John Kasich
+            h3(class='dropped') John Kasich
           div(class='candidate-position-text')
             p Doubles the research and development credit for businesses with under $20 million in gross revenues.
         div(class='candidate-position lawrence-lessig-position inactive')
@@ -1458,7 +1519,7 @@ table
             h3(class='dropped') Rick Perry
           div(class='candidate-position-text')
             p No specific proposal.
-        div(class='candidate-position marco-rubio-position')
+        div(class='candidate-position marco-rubio-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Marco Rubio
           div(class='candidate-position-text')
