@@ -23,7 +23,7 @@ ul(class='candidate-list')
   li(onclick='toggleCandidate("rand-paul")' id='rand-paul' class='dropped') Rand Paul
   li(onclick='toggleCandidate("rick-perry")' id='rick-perry' class='dropped') Rick Perry
   li(onclick='toggleCandidate("marco-rubio")' id='marco-rubio' class='dropped') Marco Rubio
-  li(onclick='toggleCandidate("bernie-sanders")' id='bernie-sanders' class='active') Bernie Sanders
+  li(onclick='toggleCandidate("bernie-sanders")' id='bernie-sanders' class='dropped') Bernie Sanders
   li(onclick='toggleCandidate("rick-santorum")' id='rick-santorum' class='dropped') Rick Santorum
   li(onclick='toggleCandidate("donald-trump")' id='donald-trump'  class='active') Donald Trump
   li(onclick='toggleCandidate("scott-walker")' id='scott-walker' class='dropped') Scott Walker
@@ -159,7 +159,7 @@ table
             p Establishes three brackets of 15%, 25%, and 35%. The top rate applies to taxable income over $150,000 for single filers and $300,000 for joint filers.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Establishes four new brackets of 37%, 43%, 48%, and 52%. The top rate applies to taxable income over $10 million. Raises the rate of all other brackets by 2.2%.
         div(class='candidate-position rick-santorum-position inactive')
@@ -283,7 +283,7 @@ table
             p Eliminates all itemized deductions except for the charitable deduction and the mortgage interest deduction. Caps the mortgage interest deduction at $300,000 of acquisition debt.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Caps the tax benefit of itemized deductions at 28% of the deduction for households with over $250,000 in income. Eliminates the Pease limitation on itemized deductions.
         div(class='candidate-position rick-santorum-position inactive')
@@ -407,7 +407,7 @@ table
             p Establishes an additional child credit of $2,500, used to offset income and payroll taxes. Replaces the standard deduction, personal exemption, and 10% bracket with a refundable personal credit.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position rick-santorum-position inactive')
@@ -531,7 +531,7 @@ table
             p Eliminates the alternative minimum tax.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Eliminates the alternative minimum tax.
         div(class='candidate-position rick-santorum-position inactive')
@@ -655,7 +655,7 @@ table
             p Lowers the rate on capital gains and dividends income to 0%.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Taxes capital gains and dividends at ordinary income rates for households with incomes over $250,000.
         div(class='candidate-position rick-santorum-position inactive')
@@ -779,7 +779,7 @@ table
             p Lowers the top corporate rate to 25%.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position rick-santorum-position inactive')
@@ -830,7 +830,7 @@ table
           div(class='candidate-name')
             h3 Hillary Clinton
           div(class='candidate-position-text')
-            p No specific proposal.
+            p Allows some small businesses to expense up to $1 million in capital investments. Increases the deduction for startup costs.
         div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Ted Cruz
@@ -903,7 +903,7 @@ table
             p Moves to full expensing of investment costs.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p No specific proposal.
         div(class='candidate-position rick-santorum-position inactive')
@@ -1027,7 +1027,7 @@ table
             p Shifts to a territorial tax system and enacts a deemed repatriation of foreign income at a 6% rate.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Ends the deferral of tax on foreign income. Creates several limits on the foreign tax credit. Revises rules about corporate inversions and foreign corporations operating domestically.
         div(class='candidate-position rick-santorum-position inactive')
@@ -1078,7 +1078,7 @@ table
           div(class='candidate-name')
             h3 Hillary Clinton
             div(class='candidate-position-text')
-              p No specific proposal.
+              p Creates a standard deduction for small business expenses.
         div(class='candidate-position ted-cruz-position inactive')
           div(class='candidate-name')
             h3(class='dropped') Ted Cruz
@@ -1151,7 +1151,7 @@ table
               p Taxes pass-through business income at 25%.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
             div(class='candidate-position-text')
               p No specific proposal.
         div(class='candidate-position rick-santorum-position inactive')
@@ -1275,7 +1275,7 @@ table
             p Eliminates the additional Medicare tax on compensation over $200,000.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Raises the employer-side payroll tax rate by 6.2%. Applies the Social Security payroll tax to earnings over $250,000. Creates a new payroll tax of 0.2%, to fund paid family leave.
         div(class='candidate-position rick-santorum-position inactive')
@@ -1399,7 +1399,7 @@ table
             p Eliminates the estate tax.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Increases the top estate tax rate to 65%, and lowers the estate tax exclusion to $3.5 million.
         div(class='candidate-position rick-santorum-position inactive')
@@ -1526,7 +1526,7 @@ table
             p Eliminates the head of household filing status. Removes interest income from the tax base, except for interest received by financial institutions. Provides a new tax credit for businesses that offer paid family leave.
         div(class='candidate-position bernie-sanders-position')
           div(class='candidate-name')
-            h3 Bernie Sanders
+            h3(class='dropped') Bernie Sanders
           div(class='candidate-position-text')
             p Eliminates the personal exemption phase-out. 
             p Establishes a financial transactions tax, at a rate between 0.005% and 0.5%, with an offsetting credit for low-income Americans.
